@@ -1,6 +1,6 @@
 # LightKeyia
 
-Une application de bureau pour analyser des images avec Ollama et générer automatiquement des mots-clés dans des fichiers XMP.
+Une application de bureau open source conçue pour analyser des images avec Ollama et générer automatiquement des mots-clés dans des fichiers XMP. Ce programme a été créé initialement pour faciliter l'organisation et le classement de photos dans Adobe Lightroom en utilisant des mots-clés générés par intelligence artificielle, permettant ainsi de créer facilement des séries thématiques.
 
 ## Caractéristiques
 
@@ -24,7 +24,7 @@ Une application de bureau pour analyser des images avec Ollama et générer auto
 
 1. Cloner le dépôt :
 ```bash
-git clone https://github.com/votre-username/lightkeyia.git
+git clone https://github.com/ettorhake/lightkeyia.git
 cd lightkeyia
 ```
 
@@ -34,6 +34,12 @@ pip install -r requirements.txt
 ```
 
 3. S'assurer qu'Ollama est installé et en cours d'exécution
+
+4. Installer le modèle Gemma avec Ollama :
+```bash
+ollama pull gemma3:4b
+```
+Note : LightKeyia a été optimisé et testé avec le modèle gemma3:4b qui offre un excellent rapport performance/qualité pour l'analyse d'images.
 
 ## Utilisation
 
@@ -55,6 +61,18 @@ Options principales :
 - `--recursive`, `-r` : Traiter les sous-répertoires
 - `--force`, `-f` : Forcer le retraitement (ignorer le cache)
 
+### Importation dans Lightroom
+
+1. Une fois que LightKeyia a traité vos images, des fichiers XMP contenant les mots-clés générés sont créés à côté de vos photos
+2. Dans Lightroom :
+   - Sélectionnez les photos concernées
+   - Faites un clic droit et choisissez "Métadonnées > Lire les métadonnées depuis le fichier"
+   - Les mots-clés générés par LightKeyia seront alors importés et associés à vos photos
+3. Vous pouvez maintenant utiliser ces mots-clés pour :
+   - Rechercher des photos spécifiques
+   - Créer des collections intelligentes
+   - Organiser vos séries thématiques
+
 ## Configuration
 
 Le fichier `config.py` contient les paramètres principaux de l'application :
@@ -75,8 +93,10 @@ Le fichier `config.py` contient les paramètres principaux de l'application :
 
 ## Licence
 
-[À définir]
+Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
-## Auteurs
+## Auteur
 
-- LightKeyia Team
+Créé par **ettorhake**
+
+Ce projet est open source et les contributions sont les bienvenues ! N'hésitez pas à ouvrir des issues ou proposer des pull requests.
