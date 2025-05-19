@@ -5,16 +5,19 @@ LightKeyia - Interface graphique
 
 import os
 import tkinter as tk
-from tkinter import ttk, filedialog, scrolledtext, messagebox
+from tkinter import ttk, filedialog, scrolledtext, messagebox, simpledialog
 import threading
 import platform
 import time
 import psutil  # Pour surveiller l'utilisation des ressources
+import webbrowser
+import requests
 
 from config import VERSION, logger, DEFAULT_OLLAMA_URL, DEFAULT_MODEL, DEFAULT_PROMPT, DEFAULT_BATCH_SIZE, DEFAULT_MAX_CONCURRENT_REQUESTS
 from image_processor import ImageProcessor
 from docker_manager import DockerManager
 from ollama_client import OllamaClient
+from theme import apply_theme, COLORS
 
 class ImageProcessorGUI:
     """GUI for the image processor"""
@@ -23,6 +26,9 @@ class ImageProcessorGUI:
         self.root = master
         self.root.title(f"Lightkey.ia - Ollama (Standalone) v{VERSION}")
         self.root.geometry("900x700")
+        
+        # Appliquer le thème personnalisé
+        self.style = apply_theme(self.root)
         
         # Set application icon if available
         try:
@@ -70,6 +76,9 @@ class ImageProcessorGUI:
         self.displayed_logs = set()  # Pour suivre les logs déjà affichés
         self.update_timer = None     # Pour suivre le timer de mise à jour
         self.is_processing = False   # Pour suivre l'état du traitement
+        
+        # Ajouter une variable pour le mode cloud
+        self.cloud_mode_var = tk.BooleanVar(value=False)
         
         # Initialize Docker manager
         self.docker_manager = DockerManager()
@@ -227,6 +236,7 @@ class ImageProcessorGUI:
         
         self.log_text = scrolledtext.ScrolledText(log_frame, height=10)
         self.log_text.pack(fill=tk.BOTH, expand=True)
+        self.configure_text_widget(self.log_text)
         
         # Initial model refresh
         #self.refresh_models()
@@ -282,12 +292,136 @@ class ImageProcessorGUI:
         ttk.Checkbutton(xmp_frame, text="Preserve existing XMP settings", variable=self.preserve_xmp_var).pack(anchor=tk.W, pady=2)
         ttk.Checkbutton(xmp_frame, text="Write metadata to JPG files", variable=self.write_jpg_metadata_var).pack(anchor=tk.W, pady=2)
         
+        # Mode Cloud frame
+        cloud_frame = ttk.LabelFrame(parent, text="Mode Cloud", padding="10")
+        cloud_frame.pack(fill=tk.X, pady=5)
+        
+        ttk.Checkbutton(cloud_frame, text="Utiliser Ollama dans le cloud (Google Colab)", 
+                       variable=self.cloud_mode_var, 
+                       command=self.toggle_cloud_mode).pack(anchor=tk.W, pady=2)
+        
+        ttk.Label(cloud_frame, text="Pour plus de puissance, utilisez Ollama dans le cloud:").pack(anchor=tk.W, pady=2)
+        colab_link = ttk.Label(cloud_frame, text="Ouvrir le notebook Google Colab", foreground="blue", cursor="hand2")
+        colab_link.pack(anchor=tk.W, pady=2)
+        colab_link.bind("<Button-1>", lambda e: self.open_colab_notebook())
+        
         # Apply button
         apply_btn = ttk.Button(parent, text="Apply Settings", command=self.update_processor)
         apply_btn.pack(pady=10)
         
         # Configure grid
         parent.columnconfigure(0, weight=1)
+    
+    def toggle_cloud_mode(self):
+        if self.cloud_mode_var.get():
+            # Open Colab notebook automatically
+            self.open_colab_notebook()
+            
+            # Show instructions dialog
+            messagebox.showinfo("Configuration Cloud",
+                             "1. Le notebook Google Colab va s'ouvrir dans votre navigateur\n" +
+                             "2. Dans Colab, cliquez sur l'icône 🔑 dans le panneau de gauche\n" +
+                             "3. Ajoutez NGROK_AUTH_TOKEN avec votre token ngrok\n" +
+                             "4. Exécutez les cellules du notebook dans l'ordre\n" +
+                             "5. Copiez l'URL ngrok affichée et collez-la ci-dessous\n\n" +
+                             "Une fois prêt, cliquez OK pour configurer l'URL.")
+            
+            url = simpledialog.askstring("Configuration Cloud", 
+                                       "Entrez l'URL ngrok fournie par Google Colab\n(exemple: https://votre-url.ngrok.app):")
+            if url and self.validate_cloud_url(url):
+                # Sauvegarder l'URL locale actuelle
+                if self.ollama_url_var.get() == DEFAULT_OLLAMA_URL:
+                    self.local_url = self.ollama_url_var.get()
+                
+                # Mettre à jour l'URL avec celle de ngrok
+                self.ollama_url_var.set(url)
+                # Mettre à jour les instances Ollama et désactiver les fonctionnalités locales
+                self.ollama_instances_var.set(url)
+                self.use_local_ollama_var.set(False)
+                
+                # Disable Docker controls
+                if hasattr(self, 'docker_controls'):
+                    for widget in self.docker_controls:
+                        widget.configure(state='disabled')
+
+                # Update processor with cloud configuration
+                self.update_processor()
+                
+                messagebox.showinfo("Mode Cloud", 
+                                  "Mode cloud activé avec succès!\n\n" +
+                                  "Utilisation de l'instance Ollama dans le cloud via ngrok.\n" +
+                                  "Le traitement des images sera plus rapide grâce au GPU gratuit de Google Colab.")
+            else:
+                self.cloud_mode_var.set(False)
+        else:
+            # Restore local URL and configuration
+            if hasattr(self, 'local_url'):
+                # Restore local URL
+                self.ollama_url_var.set(self.local_url)
+                self.ollama_instances_var.set(self.local_url)
+                
+                # Re-enable local features
+                self.use_local_ollama_var.set(True)
+                if hasattr(self, 'docker_controls'):
+                    for widget in self.docker_controls:
+                        widget.configure(state='normal')
+                
+                # Update processor with local configuration
+                self.update_processor()
+                
+                messagebox.showinfo("Mode Local", 
+                                  "Configuration restaurée en mode local.\n" +
+                                  "Utilisation de l'instance Ollama locale.")
+
+    def open_colab_notebook(self):
+        """Open the Google Colab notebook in the default browser"""
+        colab_url = "https://colab.research.google.com/github/ettorhake/lightkeyia/blob/main/lightkeyia_colab.ipynb"
+        try:
+            webbrowser.open(colab_url)
+        except Exception as e:
+            messagebox.showerror("Erreur",
+                              f"Impossible d'ouvrir le notebook Colab: {str(e)}\n\n" +
+                              "Veuillez ouvrir manuellement le lien suivant:\n" +
+                              colab_url)
+    
+    def validate_cloud_url(self, url):
+        """Valider l'URL ngrok et tester la connexion"""
+        if not url:
+            messagebox.showerror("Erreur", "L'URL ne peut pas être vide")
+            return False
+        
+        if not url.startswith(("http://", "https://")):
+            messagebox.showerror("Erreur", "L'URL doit commencer par http:// ou https://")
+            return False
+        
+        if "ngrok" not in url.lower():
+            messagebox.showerror("Erreur", "L'URL doit être une URL ngrok valide")
+            return False
+        
+        try:
+            # Try to connect to the Ollama API
+            response = requests.get(f"{url}/api/tags", timeout=10)
+            if response.status_code != 200:
+                messagebox.showerror("Erreur", 
+                                   f"Impossible de se connecter à l'instance Ollama (status: {response.status_code})")
+                return False
+
+            # Check if Gemma model is available
+            models = response.json().get("models", [])
+            if not any("gemma" in model["name"].lower() for model in models):
+                messagebox.showwarning("Attention", 
+                                     "Le modèle Gemma n'est pas encore disponible sur l'instance cloud.\n" +
+                                     "Assurez-vous d'avoir exécuté toutes les cellules du notebook Colab et " +
+                                     "que le modèle ait fini de se télécharger.")
+            return True
+            
+        except requests.exceptions.RequestException as e:
+            messagebox.showerror("Erreur", f"Impossible de se connecter à l'URL: {str(e)}")
+            return False
+        
+        except Exception as e:
+            messagebox.showerror("Erreur", f"Erreur inattendue lors de la validation de l'URL: {str(e)}")
+            return False
     
     # Modifier la méthode create_instances_tab pour ajouter une explication sur l'utilisation d'Ollama local et Docker
     def create_instances_tab(self, parent):
@@ -361,9 +495,16 @@ health_based: Selects instances based on a comprehensive health score (recommend
         
         self.instances_status_text = scrolledtext.ScrolledText(status_frame, height=10)
         self.instances_status_text.pack(fill=tk.BOTH, expand=True)
+        self.configure_text_widget(self.instances_status_text)
     
     def create_docker_tab(self, parent):
         """Créer l'onglet de gestion des conteneurs Docker"""
+        # Initialize list to track Docker-related widgets that should be disabled in cloud mode
+        self.docker_controls = []
+        
+        if not self.docker_manager.docker_available:
+            ttk.Label(parent, text="Docker n'est pas disponible sur ce système").pack(pady=20)
+            return
         # Vérifier si Docker est disponible
         docker_available = self.docker_manager.docker_available
         
@@ -389,86 +530,98 @@ health_based: Selects instances based on a comprehensive health score (recommend
         create_frame = ttk.LabelFrame(parent, text="Create Ollama Containers", padding="10")
         create_frame.pack(fill=tk.X, pady=5)
         
-        if not docker_available:
-            ttk.Label(create_frame, text="Docker n'est pas disponible sur ce système.", foreground="red").pack(pady=10)
-        else:
-            # Paramètres pour la création de conteneurs
-            ttk.Label(create_frame, text="Base Name:").grid(row=0, column=0, sticky=tk.W, pady=2)
-            ttk.Entry(create_frame, textvariable=self.docker_base_name_var).grid(row=0, column=1, sticky=tk.EW, pady=2)
-            
-            ttk.Label(create_frame, text="Start Port:").grid(row=1, column=0, sticky=tk.W, pady=2)
-            ttk.Spinbox(create_frame, from_=1024, to=65535, textvariable=self.docker_start_port_var).grid(row=1, column=1, sticky=tk.W, pady=2)
-            
-            ttk.Label(create_frame, text="Number of Containers:").grid(row=2, column=0, sticky=tk.W, pady=2)
-            ttk.Spinbox(create_frame, from_=1, to=10, textvariable=self.docker_container_count_var).grid(row=2, column=1, sticky=tk.W, pady=2)
-            
-            # Boutons pour la création de conteneurs
-            buttons_frame = ttk.Frame(create_frame)
-            buttons_frame.grid(row=3, column=0, columnspan=2, pady=10)
-            
-            ttk.Button(buttons_frame, text="Create Containers", command=self.create_containers).pack(side=tk.LEFT, padx=5)
-            ttk.Button(buttons_frame, text="Refresh Containers", command=self.refresh_containers).pack(side=tk.LEFT, padx=5)
-            
-            # Ajouter un bouton pour lancer les instances Docker
-            launch_btn = ttk.Button(buttons_frame, text="Launch Ollama Instances", command=self.launch_ollama_instances)
-            launch_btn.pack(side=tk.LEFT, padx=5)
-            
-            create_frame.columnconfigure(1, weight=1)
+        # Container base name
+        name_frame = ttk.Frame(create_frame)
+        name_frame.pack(fill=tk.X, pady=2)
+        name_label = ttk.Label(name_frame, text="Container base name:")
+        name_label.pack(side=tk.LEFT, padx=(0, 5))
+        name_entry = ttk.Entry(name_frame, textvariable=self.docker_base_name_var)
+        name_entry.pack(side=tk.LEFT, fill=tk.X, expand=True)
+        self.docker_controls.append(name_entry)
         
-        # Frame pour la liste des conteneurs
+        # Starting port
+        port_frame = ttk.Frame(create_frame)
+        port_frame.pack(fill=tk.X, pady=2)
+        port_label = ttk.Label(port_frame, text="Starting port:")
+        port_label.pack(side=tk.LEFT, padx=(0, 5))
+        port_spinbox = ttk.Spinbox(port_frame, from_=11434, to=65535, textvariable=self.docker_start_port_var)
+        port_spinbox.pack(side=tk.LEFT)
+        self.docker_controls.append(port_spinbox)
+        
+        # Number of containers
+        count_frame = ttk.Frame(create_frame)
+        count_frame.pack(fill=tk.X, pady=2)
+        count_label = ttk.Label(count_frame, text="Number of containers:")
+        count_label.pack(side=tk.LEFT, padx=(0, 5))
+        count_spinbox = ttk.Spinbox(count_frame, from_=1, to=10, textvariable=self.docker_container_count_var)
+        count_spinbox.pack(side=tk.LEFT)
+        self.docker_controls.append(count_spinbox)
+        
+        # Docker network option
+        network_check = ttk.Checkbutton(create_frame, text="Use Docker network", variable=self.use_docker_network_var)
+        network_check.pack(anchor=tk.W, pady=2)
+        self.docker_controls.append(network_check)
+        
+        # Use local Ollama option
+        local_check = ttk.Checkbutton(create_frame, text="Use local Ollama instance", variable=self.use_local_ollama_var)
+        local_check.pack(anchor=tk.W, pady=2)
+        self.docker_controls.append(local_check)
+        
+        # Buttons frame
+        buttons_frame = ttk.Frame(create_frame)
+        buttons_frame.pack(fill=tk.X, pady=5)
+        
+        create_btn = ttk.Button(buttons_frame, text="Create Containers", 
+                              command=lambda: self.create_ollama_containers())
+        create_btn.pack(side=tk.LEFT, padx=5)
+        self.docker_controls.append(create_btn)
+        
+        launch_btn = ttk.Button(buttons_frame, text="Launch Ollama Instances",
+                             command=self.launch_ollama_instances)
+        launch_btn.pack(side=tk.LEFT, padx=5)
+        self.docker_controls.append(launch_btn)
+        
+        # Containers list
         containers_frame = ttk.LabelFrame(parent, text="Ollama Containers", padding="10")
         containers_frame.pack(fill=tk.BOTH, expand=True, pady=5)
         
-        # Tableau des conteneurs
-        columns = ("name", "status", "port", "actions")
-        self.containers_tree = ttk.Treeview(containers_frame, columns=columns, show="headings")
+        # Create treeview with scrollbar for container list
+        tree_frame = ttk.Frame(containers_frame)
+        tree_frame.pack(fill=tk.BOTH, expand=True)
         
-        # Définir les en-têtes
-        self.containers_tree.heading("name", text="Name")
-        self.containers_tree.heading("status", text="Status")
-        self.containers_tree.heading("port", text="Port")
-        self.containers_tree.heading("actions", text="Actions")
+        self.containers_tree = ttk.Treeview(tree_frame, columns=("Name", "Status", "Port", "URL"),
+                                          selectmode="extended")
+        self.containers_tree.heading("#0", text="ID")
+        self.containers_tree.heading("Name", text="Name")
+        self.containers_tree.heading("Status", text="Status")
+        self.containers_tree.heading("Port", text="Port")
+        self.containers_tree.heading("URL", text="URL")
         
-        # Définir les largeurs des colonnes
-        self.containers_tree.column("name", width=150)
-        self.containers_tree.column("status", width=100)
-        self.containers_tree.column("port", width=80)
-        self.containers_tree.column("actions", width=200)
+        self.containers_tree.column("#0", width=100)
+        self.containers_tree.column("Name", width=150)
+        self.containers_tree.column("Status", width=150)
+        self.containers_tree.column("Port", width=100)
+        self.containers_tree.column("URL", width=200)
         
-        # Ajouter une barre de défilement
-        scrollbar = ttk.Scrollbar(containers_frame, orient=tk.VERTICAL, command=self.containers_tree.yview)
-        self.containers_tree.configure(yscroll=scrollbar.set)
-        
-        # Placer le tableau et la barre de défilement
         self.containers_tree.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        
+        # Add scrollbar
+        scrollbar = ttk.Scrollbar(tree_frame, orient="vertical", command=self.containers_tree.yview)
         scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+        self.containers_tree.configure(yscrollcommand=scrollbar.set)
         
-        # Ajouter un menu contextuel pour les actions sur les conteneurs
-        self.container_menu = tk.Menu(self.containers_tree, tearoff=0)
-        self.container_menu.add_command(label="Start", command=lambda: self.start_container())
-        self.container_menu.add_command(label="Stop", command=lambda: self.stop_container())
-        self.container_menu.add_command(label="Remove", command=lambda: self.remove_container())
-        self.container_menu.add_separator()
-        self.container_menu.add_command(label="Check API", command=lambda: self.check_container_api())
-        self.container_menu.add_command(label="Pull Model", command=lambda: self.pull_model_to_container())
-        
-        # Lier le menu contextuel au clic droit
+        # Bind right-click for context menu
         self.containers_tree.bind("<Button-3>", self.show_container_menu)
+        self.docker_controls.append(self.containers_tree)
         
-        # Lier le double-clic pour les actions rapides
-        self.containers_tree.bind("<Double-1>", self.container_double_click)
+        # Refresh button
+        refresh_btn = ttk.Button(containers_frame, text="Refresh List", 
+                               command=self.refresh_container_list)
+        refresh_btn.pack(pady=5)
+        self.docker_controls.append(refresh_btn)
         
-        # Frame pour les actions sur les conteneurs sélectionnés
-        actions_frame = ttk.Frame(parent)
-        actions_frame.pack(fill=tk.X, pady=5)
-        
-        ttk.Button(actions_frame, text="Start Selected", command=self.start_container).pack(side=tk.LEFT, padx=5)
-        ttk.Button(actions_frame, text="Stop Selected", command=self.stop_container).pack(side=tk.LEFT, padx=5)
-        ttk.Button(actions_frame, text="Remove Selected", command=self.remove_container).pack(side=tk.LEFT, padx=5)
-        ttk.Button(actions_frame, text="Pull gemma3:4b", command=lambda: self.pull_model_to_container("gemma3:4b")).pack(side=tk.RIGHT, padx=5)
-        
-        # Charger la liste des conteneurs
-        self.refresh_containers()
+        # Initial container list refresh
+        self.refresh_container_list()
     
     def create_monitor_tab(self, parent):
         """Créer l'onglet de monitoring des ressources"""
@@ -530,7 +683,8 @@ health_based: Selects instances based on a comprehensive health score (recommend
         about_frame = ttk.Frame(parent, padding="20")
         about_frame.pack(fill=tk.BOTH, expand=True)
         
-        ttk.Label(about_frame, text=f"LightKeyia v{VERSION}", font=("", 16, "bold")).pack(pady=10)
+        title_label = ttk.Label(about_frame, text=f"LightKeyia v{VERSION}", style='Title.TLabel')
+        title_label.pack(pady=10)
         ttk.Label(about_frame, text="A tool to analyze images with Ollama and generate keywords in XMP files.").pack(pady=5)
         ttk.Label(about_frame, text="Compatible with standard and RAW formats.").pack(pady=5)
         
@@ -554,11 +708,16 @@ health_based: Selects instances based on a comprehensive health score (recommend
     # Modifier la méthode update_processor pour prendre en compte le choix entre Ollama local et Docker
     def update_processor(self):
         # Récupérer la liste des instances Ollama
-        ollama_urls = [url.strip() for url in self.ollama_instances_var.get().split(',') if url.strip()]
-
-        # Si aucune URL n'est spécifiée, utiliser localhost par défaut
-        if not ollama_urls:
-            ollama_urls = [DEFAULT_OLLAMA_URL]
+        if self.cloud_mode_var.get():
+            # En mode cloud, utiliser uniquement l'URL ngrok
+            ollama_urls = [self.ollama_url_var.get()]
+        else:
+            # En mode local, utiliser la liste des instances configurées
+            ollama_urls = [url.strip() for url in self.ollama_instances_var.get().split(',') if url.strip()]
+            
+            # Si aucune URL n'est spécifiée, utiliser localhost par défaut
+            if not ollama_urls:
+                ollama_urls = [DEFAULT_OLLAMA_URL]
 
         # Éviter les initialisations multiples avec les mêmes paramètres
         if self.processor_initialized and hasattr(self, 'processor') and self.processor is not None:
@@ -814,85 +973,34 @@ health_based: Selects instances based on a comprehensive health score (recommend
             "port": values[2]
         }
     
-    def start_container(self):
-        """Démarrer le conteneur sélectionné"""
-        container = self.get_selected_container()
-        if not container:
-            return
-        
-        if container["status"] == "Running":
-            messagebox.showinfo("Information", f"Le conteneur {container['name']} est déjà en cours d'exécution")
-            return
-        
-        # Démarrer le conteneur dans un thread séparé
-        def start_thread():
-            success, message = self.docker_manager.start_container(container["id"])
-            
-            if success:
-                self.log_text.insert(tk.END, f"Conteneur {container['name']} démarré avec succès\n")
-            else:
-                self.log_text.insert(tk.END, f"Erreur lors du démarrage du conteneur {container['name']}: {message}\n")
-            
-            self.log_text.see(tk.END)
-            
-            # Mettre à jour la liste des conteneurs
-            self.root.after(0, self.refresh_containers)
-        
-        threading.Thread(target=start_thread, daemon=True).start()
+    def start_container(self, container_id):
+        """Start a Docker container"""
+        success = self.docker_manager.start_container(container_id)
+        if success:
+            messagebox.showinfo("Succès", "Le conteneur a été démarré avec succès")
+            self.refresh_container_list()
+        else:
+            messagebox.showerror("Erreur", "Impossible de démarrer le conteneur")
     
-    def stop_container(self):
-        """Arrêter le conteneur sélectionné"""
-        container = self.get_selected_container()
-        if not container:
-            return
-        
-        if container["status"] != "Running":
-            messagebox.showinfo("Information", f"Le conteneur {container['name']} est déjà arrêté")
-            return
-        
-        # Arrêter le conteneur dans un thread séparé
-        def stop_thread():
-            success, message = self.docker_manager.stop_container(container["id"])
-            
-            if success:
-                self.log_text.insert(tk.END, f"Conteneur {container['name']} arrêté avec succès\n")
-            else:
-                self.log_text.insert(tk.END, f"Erreur lors de l'arrêt du conteneur {container['name']}: {message}\n")
-            
-            self.log_text.see(tk.END)
-            
-            # Mettre à jour la liste des conteneurs
-            self.root.after(0, self.refresh_containers)
-        
-        threading.Thread(target=stop_thread, daemon=True).start()
+    def stop_container(self, container_id):
+        """Stop a Docker container"""
+        success = self.docker_manager.stop_container(container_id)
+        if success:
+            messagebox.showinfo("Succès", "Le conteneur a été arrêté avec succès")
+            self.refresh_container_list()
+        else:
+            messagebox.showerror("Erreur", "Impossible d'arrêter le conteneur")
     
-    def remove_container(self):
-        """Supprimer le conteneur sélectionné"""
-        container = self.get_selected_container()
-        if not container:
-            return
-        
-        # Demander confirmation
-        if not messagebox.askyesno("Confirmation", f"Voulez-vous vraiment supprimer le conteneur {container['name']} ?"):
-            return
-        
-        # Supprimer le conteneur dans un thread séparé
-        def remove_thread():
-            # Forcer la suppression si le conteneur est en cours d'exécution
-            force = container["status"] == "Running"
-            success, message = self.docker_manager.remove_container(container["id"], force)
-            
+    def remove_container(self, container_id):
+        """Remove a Docker container"""
+        if messagebox.askyesno("Confirmation",
+                             "Êtes-vous sûr de vouloir supprimer ce conteneur ?"):
+            success = self.docker_manager.remove_container(container_id, force=True)
             if success:
-                self.log_text.insert(tk.END, f"Conteneur {container['name']} supprimé avec succès\n")
+                messagebox.showinfo("Succès", "Le conteneur a été supprimé avec succès")
+                self.refresh_container_list()
             else:
-                self.log_text.insert(tk.END, f"Erreur lors de la suppression du conteneur {container['name']}: {message}\n")
-            
-            self.log_text.see(tk.END)
-            
-            # Mettre à jour la liste des conteneurs
-            self.root.after(0, self.refresh_containers)
-        
-        threading.Thread(target=remove_thread, daemon=True).start()
+                messagebox.showerror("Erreur", "Impossible de supprimer le conteneur")
     
     def check_container_api(self):
         """Vérifier l'API du conteneur sélectionné"""
@@ -1316,7 +1424,155 @@ health_based: Selects instances based on a comprehensive health score (recommend
         
         self.log_text.see(tk.END)
 
+    def create_ollama_containers(self):
+        """Create Docker containers for Ollama"""
+        containers = self.docker_manager.create_multiple_containers(
+            self.docker_base_name_var.get(),
+            self.docker_start_port_var.get(),
+            self.docker_container_count_var.get(),
+            self.use_docker_network_var.get()
+        )
+        
+        success = all(container["success"] for container in containers)
+        if success:
+            messagebox.showinfo("Succès", 
+                              "Conteneurs Ollama créés avec succès.\n" +
+                              "Utilisez 'Launch Ollama Instances' pour les configurer.")
+            self.refresh_container_list()
+        else:
+            failed = [c for c in containers if not c["success"]]
+            error_msg = "\n".join(f"- {c['name']}: {c['message']}" for c in failed)
+            messagebox.showerror("Erreur",
+                               f"Erreur lors de la création des conteneurs:\n{error_msg}")
+    
+    def refresh_container_list(self):
+        """Refresh the container list in the treeview"""
+        for item in self.containers_tree.get_children():
+            self.containers_tree.delete(item)
+        
+        containers = self.docker_manager.list_ollama_containers()
+        for container in containers:
+            self.containers_tree.insert("", "end",
+                                      iid=container["id"],
+                                      text=container["id"][:12],
+                                      values=(container["name"],
+                                             container["status"],
+                                             container["port"],
+                                             container["url"]))
+    
+    def show_container_menu(self, event):
+        """Show context menu for container actions"""
+        tree = event.widget
+        iid = tree.identify_row(event.y)
+        if iid:
+            tree.selection_set(iid)
+            item = tree.selection()[0]
+            container_menu = tk.Menu(self.root, tearoff=0)
+            
+            # Get container status
+            values = tree.item(item)["values"]
+            is_running = "Up" in values[1]
+            
+            if is_running:
+                container_menu.add_command(label="Stop",
+                                         command=lambda: self.stop_container(item))
+            else:
+                container_menu.add_command(label="Start",
+                                         command=lambda: self.start_container(item))
+            
+            container_menu.add_command(label="Remove",
+                                     command=lambda: self.remove_container(item))
+            
+            container_menu.tk_popup(event.x_root, event.y_root)
+    
+    def start_container(self, container_id):
+        """Start a Docker container"""
+        success = self.docker_manager.start_container(container_id)
+        if success:
+            messagebox.showinfo("Succès", "Le conteneur a été démarré avec succès")
+            self.refresh_container_list()
+        else:
+            messagebox.showerror("Erreur", "Impossible de démarrer le conteneur")
+    
+    def stop_container(self, container_id):
+        """Stop a Docker container"""
+        success = self.docker_manager.stop_container(container_id)
+        if success:
+            messagebox.showinfo("Succès", "Le conteneur a été arrêté avec succès")
+            self.refresh_container_list()
+        else:
+            messagebox.showerror("Erreur", "Impossible d'arrêter le conteneur")
+    
+    def remove_container(self, container_id):
+        """Remove a Docker container"""
+        if messagebox.askyesno("Confirmation",
+                             "Êtes-vous sûr de vouloir supprimer ce conteneur ?"):
+            success = self.docker_manager.remove_container(container_id, force=True)
+            if success:
+                messagebox.showinfo("Succès", "Le conteneur a été supprimé avec succès")
+                self.refresh_container_list()
+            else:
+                messagebox.showerror("Erreur", "Impossible de supprimer le conteneur")
+
     def log_message(self, message):
         """Ajouter un message au log"""
         self.log_text.insert(tk.END, message + "\n")
         self.log_text.see(tk.END)
+
+    def configure_text_widget(self, widget):
+        """Configure l'apparence d'un widget Text ou ScrolledText"""
+        widget.configure(
+            background=COLORS['input_bg'],
+            foreground=COLORS['fg'],
+            insertbackground=COLORS['accent'],
+            selectbackground=COLORS['accent'],
+            selectforeground=COLORS['bg'],
+            relief="sunken",
+            borderwidth=2,
+            padx=5,
+            pady=5,
+            font=self.style.fonts['normal']
+        )
+        # Configurer la scrollbar avec le style rétro
+        if hasattr(widget, 'vbar'):
+            widget.vbar.configure(
+                background=COLORS['button_bg'],
+                troughcolor=COLORS['bg'],
+                activebackground=COLORS['accent'],
+                relief="raised",
+                width=12
+            )
+
+    def create_styled_title(self, parent, text):
+        """Créer un titre stylisé avec effet rétro gaming"""
+        title_frame = ttk.Frame(parent)
+        title_frame.pack(fill=tk.X, pady=(10, 5))
+        
+        label = ttk.Label(
+            title_frame,
+            text=text,
+            style='Title.TLabel',
+            foreground=COLORS['accent'],
+            font=self.style.fonts['title']
+        )
+        label.pack(anchor=tk.CENTER)
+        
+        # Ajouter une ligne de séparation stylisée
+        separator = ttk.Frame(title_frame, height=2, style='Separator.TFrame')
+        separator.pack(fill=tk.X, pady=(2, 5))
+        
+        return label
+
+    def create_action_button(self, parent, text, command, is_primary=False):
+        """Créer un bouton d'action stylisé"""
+        btn = ttk.Button(
+            parent,
+            text=text,
+            command=command,
+            style='Retro.TButton'
+        )
+        
+        if is_primary:
+            btn.configure(style='Primary.TButton')
+            
+        return btn

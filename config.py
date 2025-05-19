@@ -26,8 +26,9 @@ IMAGE_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.gif', '.bmp', '.webp', '.tiff', '
 RAW_EXTENSIONS = ('.cr2', '.cr3', '.nef', '.nrw', '.arw', '.srf', '.sr2', '.raf', '.orf', '.rw2',
                  '.pef', '.dng', '.raw', '.rwl', '.iiq', '.3fr', '.x3f')
 
-# URL par défaut pour Ollama
+# URLs pour Ollama
 DEFAULT_OLLAMA_URL = "http://localhost:11434"
+DEFAULT_CLOUD_URL = None  # Sera rempli dynamiquement quand le mode cloud est activé
 
 # Valeurs par défaut pour le traitement d'images
 DEFAULT_MODEL = "gemma3:4b"

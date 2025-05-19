@@ -43,7 +43,23 @@ Note : LightKeyia a été optimisé et testé avec le modèle gemma3:4b qui offr
 
 ## Utilisation
 
-### Mode Interface Graphique
+### Mode Cloud (Recommandé pour de meilleures performances)
+
+LightKeyia peut utiliser Google Colab pour exécuter Ollama dans le cloud, offrant ainsi de meilleures performances grâce aux GPUs gratuits :
+
+1. Créez un compte sur [ngrok.com](https://ngrok.com) et récupérez votre token d'authentification
+2. Ouvrez le notebook [LightKeyia_Cloud.ipynb](https://colab.research.google.com/github/ettorhake/lightkeyia/blob/main/lightkeyia_colab.ipynb) dans Google Colab
+3. Dans Colab, configurer vos variables secrètes :
+   - Cliquez sur l'icône 🔑 dans le panneau de gauche
+   - Ajoutez `NGROK_AUTH_TOKEN` avec votre token ngrok
+4. Exécutez les cellules du notebook dans l'ordre
+5. Copiez l'URL ngrok générée
+6. Lancez LightKeyia en local avec cette URL :
+```bash
+python main.py --ollama-url https://votre-url-ngrok.ngrok.app
+```
+
+### Mode Local
 
 ```bash
 python main.py
