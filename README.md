@@ -2,7 +2,7 @@
 
 Une application de bureau open source conçue pour analyser des images avec Ollama et générer automatiquement des mots-clés dans des fichiers XMP. Ce programme a été créé initialement pour faciliter l'organisation et le classement de photos dans Adobe Lightroom en utilisant des mots-clés générés par intelligence artificielle, permettant ainsi de créer facilement des séries thématiques.
 
-![Alt text](screenshoot.jpg?raw=true "Une capture de l'application")
+![Alt text](Screenshot_1.png?raw=true "Une capture de l'application")
 
 ## Caractéristiques
 
