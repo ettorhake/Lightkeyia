@@ -12485,3 +12485,660 @@
 2025-05-20 19:00:49,144 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\LA_STREET_REPUBLIQUE\DSC09905.ARW
 2025-05-20 19:00:49,145 - INFO - Using model: gemma3:12b with temperature: 0.5
 2025-05-20 19:00:49,146 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\LA_STREET_REPUBLIQUE\DSC00237.ARW
+2025-05-20 19:00:49,147 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\PEROU\DSC02048.ARW
+2025-05-20 19:00:49,148 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,149 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\MAELLE\DSC00985.ARW
+2025-05-20 19:00:49,150 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\LA_STREET_REPUBLIQUE\DSC09851.ARW
+2025-05-20 19:00:49,151 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,151 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\QUIBERON\DSC09415.ARW
+2025-05-20 19:00:49,153 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,154 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\MAELLE\NOUVELAN\DSC03012.ARW
+2025-05-20 19:00:49,155 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,155 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\PEROU\DSC01873.ARW
+2025-05-20 19:00:49,156 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,157 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08119.ARW
+2025-05-20 19:00:49,159 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,159 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\CDF-10ANS\DSC01159.ARW
+2025-05-20 19:00:49,161 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\CDF-10ANS\DSC01292.ARW
+2025-05-20 19:00:49,163 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC07864.ARW
+2025-05-20 19:00:49,164 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,165 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC07914.ARW
+2025-05-20 19:00:49,167 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,167 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\CDF-10ANS\DSC01351.ARW
+2025-05-20 19:00:49,169 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\QUIBERON\QUIBERON-MELOU\QUIBERON\Quiberon-04.jpg
+2025-05-20 19:00:49,171 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08299.ARW
+2025-05-20 19:00:49,173 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,174 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\MAELLE\DSC01033.ARW
+2025-05-20 19:00:49,175 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,175 - INFO - RAW file detected: G:/PHOTOS/PHOTOS_DE_2019\QUIBERON\DSC09415.ARW, minimal metadata created
+2025-05-20 19:00:49,177 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\POI-AD-7-ANS\DSC00635.ARW
+2025-05-20 19:00:49,177 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,178 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,179 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\MARCHE_CLIMAT\DSC09290.ARW
+2025-05-20 19:00:49,180 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,181 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\LA_STREET_REPUBLIQUE\DSC00020.ARW
+2025-05-20 19:00:49,182 - INFO - XMP file with keywords already exists, skipped
+2025-05-20 19:00:49,183 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,184 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08561.ARW
+2025-05-20 19:00:49,184 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,186 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,186 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\PEROU\DSC01558.ARW
+2025-05-20 19:00:49,188 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\LA_STREET_REPUBLIQUE\DSC00185.ARW
+2025-05-20 19:00:49,188 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,190 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC09062.ARW
+2025-05-20 19:00:49,190 - INFO - RAW file detected: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08119.ARW, minimal metadata created
+2025-05-20 19:00:49,191 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\LA_STREET_REPUBLIQUE\DSC00106.ARW
+2025-05-20 19:00:49,192 - INFO - XMP file with keywords already exists, skipped
+2025-05-20 19:00:49,194 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08116.ARW
+2025-05-20 19:00:49,194 - INFO - Metadata extracted: 3 elements
+2025-05-20 19:00:49,195 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,197 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08599.ARW
+2025-05-20 19:00:49,198 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08717.ARW
+2025-05-20 19:00:49,199 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,200 - INFO - RAW file detected: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC07864.ARW, minimal metadata created
+2025-05-20 19:00:49,201 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,201 - INFO - RAW file detected: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC07914.ARW, minimal metadata created
+2025-05-20 19:00:49,201 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,202 - INFO - XMP file with keywords already exists, skipped
+2025-05-20 19:00:49,204 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,204 - INFO - RAW file detected: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08299.ARW, minimal metadata created
+2025-05-20 19:00:49,204 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,205 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,206 - INFO - Metadata extracted: 3 elements
+2025-05-20 19:00:49,206 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,207 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,208 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,208 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:00:49,209 - INFO - XMP file with keywords already exists, skipped
+2025-05-20 19:00:49,209 - INFO - Metadata extracted: 3 elements
+2025-05-20 19:00:49,210 - INFO - Metadata extracted: 3 elements
+2025-05-20 19:00:49,210 - INFO - RAW file detected: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08561.ARW, minimal metadata created
+2025-05-20 19:00:49,211 - INFO - Metadata extracted: 3 elements
+2025-05-20 19:00:49,212 - INFO - RAW file detected: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC09062.ARW, minimal metadata created
+2025-05-20 19:00:49,213 - INFO - RAW file detected: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08116.ARW, minimal metadata created
+2025-05-20 19:00:49,213 - INFO - RAW file detected: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08599.ARW, minimal metadata created
+2025-05-20 19:00:49,214 - INFO - RAW file detected: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08717.ARW, minimal metadata created
+2025-05-20 19:00:49,225 - INFO - XMP file with keywords already exists, skipped
+2025-05-20 19:00:49,622 - INFO - Metadata extracted: 4 elements
+2025-05-20 19:00:50,032 - INFO - Instance Ollama https://meerkat-valued-ant.ngrok-free.app/: Available
+2025-05-20 19:00:50,032 - INFO - Detected 1 overloaded instances
+2025-05-20 19:00:50,032 - INFO - Resetting statistics for overloaded instance: https://meerkat-valued-ant.ngrok-free.app/
+2025-05-20 19:00:50,032 - INFO - Statistics reset for instance https://meerkat-valued-ant.ngrok-free.app/
+2025-05-20 19:00:53,209 - INFO - Instance Ollama https://meerkat-valued-ant.ngrok-free.app/: Available
+2025-05-20 19:00:53,209 - INFO - Detected 1 overloaded instances
+2025-05-20 19:00:53,209 - INFO - Resetting statistics for overloaded instance: https://meerkat-valued-ant.ngrok-free.app/
+2025-05-20 19:00:53,209 - INFO - Statistics reset for instance https://meerkat-valued-ant.ngrok-free.app/
+2025-05-20 19:00:53,986 - INFO - Image resized: G:/PHOTOS/PHOTOS_DE_2019\QUIBERON\QUIBERON-MELOU\QUIBERON\Quiberon-04.jpg -> C:\Users\Jlauzes\AppData\Local\Temp\temp_resize_Quiberon-04.jpg
+2025-05-20 19:00:53,994 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 0, total: 0)
+2025-05-20 19:00:53,994 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:00:55,704 - INFO - RAW file converted to JPEG: C:\Users\Jlauzes\AppData\Local\Temp\tmp8dz09x42\temp_raw_DSC08119.ARW.jpg
+2025-05-20 19:00:55,712 - INFO - RAW file converted to JPEG: C:\Users\Jlauzes\AppData\Local\Temp\tmp_n7rk8b2\temp_raw_DSC08599.ARW.jpg
+2025-05-20 19:00:55,718 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 1, total: 0)
+2025-05-20 19:00:55,719 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:00:55,719 - INFO - RAW file converted to JPEG: C:\Users\Jlauzes\AppData\Local\Temp\tmp6uvnjdwk\temp_raw_DSC07914.ARW.jpg
+2025-05-20 19:00:55,720 - INFO - RAW file converted to JPEG: C:\Users\Jlauzes\AppData\Local\Temp\tmpmv0dsnji\temp_raw_DSC08561.ARW.jpg
+2025-05-20 19:00:55,724 - WARNING - All instances are overloaded, adding a recovery pause
+2025-05-20 19:00:55,733 - WARNING - All instances are overloaded, adding a recovery pause
+2025-05-20 19:00:55,733 - WARNING - All instances are overloaded, adding a recovery pause
+2025-05-20 19:00:57,724 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 2, total: 0)
+2025-05-20 19:00:57,725 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:00:57,734 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 3, total: 0)
+2025-05-20 19:00:57,734 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 3, total: 0)
+2025-05-20 19:00:59,752 - INFO - RAW file converted to JPEG: C:\Users\Jlauzes\AppData\Local\Temp\tmpd2fc7g_d\temp_raw_DSC08717.ARW.jpg
+2025-05-20 19:00:59,756 - INFO - RAW file converted to JPEG: C:\Users\Jlauzes\AppData\Local\Temp\tmp8dmzdf54\temp_raw_DSC08116.ARW.jpg
+2025-05-20 19:00:59,767 - INFO - RAW file converted to JPEG: C:\Users\Jlauzes\AppData\Local\Temp\tmpln3xy_iq\temp_raw_DSC08299.ARW.jpg
+2025-05-20 19:00:59,767 - INFO - RAW file converted to JPEG: C:\Users\Jlauzes\AppData\Local\Temp\tmphiuus9i1\temp_raw_DSC09062.ARW.jpg
+2025-05-20 19:00:59,768 - WARNING - All instances are overloaded, adding a recovery pause
+2025-05-20 19:00:59,768 - WARNING - All instances are overloaded, adding a recovery pause
+2025-05-20 19:00:59,781 - WARNING - All instances are overloaded, adding a recovery pause
+2025-05-20 19:00:59,781 - WARNING - All instances are overloaded, adding a recovery pause
+2025-05-20 19:01:00,096 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:01:00,096 - INFO - Raw model response for Quiberon-04.jpg: ```json
+{
+"subjects": ["island", "ocean", "coastline", "nature", "landscape"],
+"scene": "The photograph showcases a vibrant green grassy area in the foreground that slopes down to a calm, blue ocean w...
+2025-05-20 19:01:00,096 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:01:00,096 - INFO - Raw JSON data before extraction: {'subjects': ['island', 'ocean', 'coastline', 'nature', 'landscape'], 'scene': 'The photograph showcases a vibrant green grassy area in the foreground that slopes down to a calm, blue ocean with a sma...
+2025-05-20 19:01:00,097 - INFO - Extracted keywords: ['island', 'ocean', 'coastline', 'nature', 'landscape', 'grass', 'island', 'rocks', 'ocean', 'natural light']...
+2025-05-20 19:01:00,097 - INFO - Extracted 33 unique keywords and scene description: The photograph showcases a vibrant green grassy ar...
+2025-05-20 19:01:00,097 - INFO - Extracted 30 keywords for XMP
+2025-05-20 19:01:00,097 - INFO - Scene description: The photograph showcases a vibrant green grassy ar...
+2025-05-20 19:01:00,128 - INFO - New XMP file saved
+2025-05-20 19:01:00,507 - INFO - Metadata written to JPG file with Pillow (limited)
+2025-05-20 19:01:00,512 - INFO - Metadata written to JPG file: G:/PHOTOS/PHOTOS_DE_2019\QUIBERON\QUIBERON-MELOU\QUIBERON\Quiberon-04.jpg
+2025-05-20 19:01:00,513 - INFO - Image processed successfully in 11.34 seconds: G:/PHOTOS/PHOTOS_DE_2019\QUIBERON\QUIBERON-MELOU\QUIBERON\Quiberon-04.jpg
+2025-05-20 19:01:01,501 - INFO - RAW file converted to JPEG: C:\Users\Jlauzes\AppData\Local\Temp\tmpqvy0meza\temp_raw_DSC07864.ARW.jpg
+2025-05-20 19:01:01,509 - INFO - RAW file converted to JPEG: C:\Users\Jlauzes\AppData\Local\Temp\tmp3n0_1mpc\temp_raw_DSC09415.ARW.jpg
+2025-05-20 19:01:01,511 - WARNING - All instances are overloaded, adding a recovery pause
+2025-05-20 19:01:01,520 - WARNING - All instances are overloaded, adding a recovery pause
+2025-05-20 19:01:01,768 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 3, total: 1)
+2025-05-20 19:01:01,769 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 3, total: 1)
+2025-05-20 19:01:01,781 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 3, total: 1)
+2025-05-20 19:01:01,782 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 3, total: 1)
+2025-05-20 19:01:03,420 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:01:03,420 - INFO - Raw model response for DSC08119.ARW: ```json
+{
+"subjects": ["skatepark", "graffiti", "urban", "architecture"],
+"scene": "The photograph depicts a section of a skatepark with a vibrant yellow graffiti tag prominently displayed on a blue r...
+2025-05-20 19:01:03,420 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:01:03,420 - INFO - Raw JSON data before extraction: {'subjects': ['skatepark', 'graffiti', 'urban', 'architecture'], 'scene': "The photograph depicts a section of a skatepark with a vibrant yellow graffiti tag prominently displayed on a blue ramp, part...
+2025-05-20 19:01:03,420 - INFO - Extracted keywords: ['skatepark', 'graffiti', 'urban', 'architecture', 'skatepark ramp', 'graffiti art', 'handrail', 'concrete', 'skateboard (implied)', 'warm lighting']...
+2025-05-20 19:01:03,420 - INFO - Extracted 34 unique keywords and scene description: The photograph depicts a section of a skatepark wi...
+2025-05-20 19:01:03,421 - INFO - Extracted 33 keywords for XMP
+2025-05-20 19:01:03,421 - INFO - Scene description: The photograph depicts a section of a skatepark wi...
+2025-05-20 19:01:03,425 - INFO - New XMP file saved
+2025-05-20 19:01:03,425 - INFO - Image processed successfully in 14.27 seconds: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08119.ARW
+2025-05-20 19:01:03,512 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 3, total: 2)
+2025-05-20 19:01:03,521 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 3, total: 2)
+2025-05-20 19:01:08,898 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:01:08,898 - INFO - Raw model response for DSC08599.ARW: ```json
+{
+"subjects": ["skateboarding", "action", "sports", "extreme sports", "indoor", "competition"],
+"scene": "The photograph depicts an indoor skateboarding competition taking place within a large...
+2025-05-20 19:01:08,898 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:01:08,898 - INFO - Raw JSON data before extraction: {'subjects': ['skateboarding', 'action', 'sports', 'extreme sports', 'indoor', 'competition'], 'scene': 'The photograph depicts an indoor skateboarding competition taking place within a large, open wa...
+2025-05-20 19:01:08,898 - INFO - Extracted keywords: ['skateboarding', 'action', 'sports', 'extreme sports', 'indoor', 'competition', 'skate ramp', 'crowd', 'warehouse', 'banner']...
+2025-05-20 19:01:08,898 - INFO - Extracted 47 unique keywords and scene description: The photograph depicts an indoor skateboarding com...
+2025-05-20 19:01:08,898 - INFO - Extracted 46 keywords for XMP
+2025-05-20 19:01:08,898 - INFO - Scene description: The photograph depicts an indoor skateboarding com...
+2025-05-20 19:01:08,902 - INFO - New XMP file saved
+2025-05-20 19:01:08,902 - INFO - Image processed successfully in 19.71 seconds: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08599.ARW
+2025-05-20 19:01:11,194 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:01:11,194 - INFO - Raw model response for DSC08561.ARW: ```json
+{
+"subjects": ["skateboarding", "action", "sport", "extreme sport", "youth", "competition"],
+"scene": "A young male skateboarder is performing a trick on a large, curved blue ramp within a spa...
+2025-05-20 19:01:11,194 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:01:11,194 - INFO - Raw JSON data before extraction: {'subjects': ['skateboarding', 'action', 'sport', 'extreme sport', 'youth', 'competition'], 'scene': 'A young male skateboarder is performing a trick on a large, curved blue ramp within a spacious ind...
+2025-05-20 19:01:11,194 - INFO - Extracted keywords: ['skateboarding', 'action', 'sport', 'extreme sport', 'youth', 'competition', 'skateboard', 'ramp', 'stairway', 'stands']...
+2025-05-20 19:01:11,194 - INFO - Extracted 40 unique keywords and scene description: A young male skateboarder is performing a trick on...
+2025-05-20 19:01:11,194 - INFO - Extracted 40 keywords for XMP
+2025-05-20 19:01:11,194 - INFO - Scene description: A young male skateboarder is performing a trick on...
+2025-05-20 19:01:11,197 - INFO - New XMP file saved
+2025-05-20 19:01:11,197 - INFO - Image processed successfully in 22.01 seconds: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08561.ARW
+2025-05-20 19:01:16,637 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:01:16,637 - INFO - Raw model response for DSC07914.ARW: ```json
+{
+"subjects": ["skateboarding", "sports", "action", "movement", "youth"],
+"scene": "The photograph captures a young skateboarder performing a trick on a metal rail within a spacious, indoor sk...
+2025-05-20 19:01:16,637 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:01:16,638 - INFO - Raw JSON data before extraction: {'subjects': ['skateboarding', 'sports', 'action', 'movement', 'youth'], 'scene': 'The photograph captures a young skateboarder performing a trick on a metal rail within a spacious, indoor skatepark, ...
+2025-05-20 19:01:16,638 - INFO - Extracted keywords: ['skateboarding', 'sports', 'action', 'movement', 'youth', 'skateboard', 'rail', 'skatepark', 'helmet', 'metal']...
+2025-05-20 19:01:16,638 - INFO - Extracted 43 unique keywords and scene description: The photograph captures a young skateboarder perfo...
+2025-05-20 19:01:16,638 - INFO - Extracted 43 keywords for XMP
+2025-05-20 19:01:16,638 - INFO - Scene description: The photograph captures a young skateboarder perfo...
+2025-05-20 19:01:16,640 - INFO - New XMP file saved
+2025-05-20 19:01:16,641 - INFO - Image processed successfully in 27.48 seconds: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC07914.ARW
+2025-05-20 19:01:19,468 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:01:19,468 - INFO - Raw model response for DSC08717.ARW: ```json
+{
+"subjects": ["skatepark", "indoor", "architecture", "urban", "sport", "recreation"],
+"scene": "The photograph captures a large, indoor skatepark featuring a complex arrangement of ramps, rai...
+2025-05-20 19:01:19,469 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:01:19,469 - INFO - Raw JSON data before extraction: {'subjects': ['skatepark', 'indoor', 'architecture', 'urban', 'sport', 'recreation'], 'scene': 'The photograph captures a large, indoor skatepark featuring a complex arrangement of ramps, rails, and o...
+2025-05-20 19:01:19,469 - INFO - Extracted keywords: ['skatepark', 'indoor', 'architecture', 'urban', 'sport', 'recreation', 'ramp', 'rail', 'skatepark obstacles', 'crowd barrier']...
+2025-05-20 19:01:19,470 - INFO - Extracted 40 unique keywords and scene description: The photograph captures a large, indoor skatepark ...
+2025-05-20 19:01:19,470 - INFO - Extracted 39 keywords for XMP
+2025-05-20 19:01:19,470 - INFO - Scene description: The photograph captures a large, indoor skatepark ...
+2025-05-20 19:01:19,473 - INFO - New XMP file saved
+2025-05-20 19:01:19,473 - INFO - Image processed successfully in 30.27 seconds: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08717.ARW
+2025-05-20 19:01:23,927 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:01:23,928 - INFO - Raw model response for DSC08116.ARW: ```json
+{
+"subjects": ["skateboarding", "action", "sport", "urban", "youth"],
+"scene": "A skateboarder is captured mid-air, performing a trick above a blue and yellow textured surface with a graffiti-...
+2025-05-20 19:01:23,928 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:01:23,928 - INFO - Raw JSON data before extraction: {'subjects': ['skateboarding', 'action', 'sport', 'urban', 'youth'], 'scene': 'A skateboarder is captured mid-air, performing a trick above a blue and yellow textured surface with a graffiti-style des...
+2025-05-20 19:01:23,928 - INFO - Extracted keywords: ['skateboarding', 'action', 'sport', 'urban', 'youth', 'skateboard', 'railings', 'surface', 'graffiti', 'skate park']...
+2025-05-20 19:01:23,928 - INFO - Extracted 35 unique keywords and scene description: A skateboarder is captured mid-air, performing a t...
+2025-05-20 19:01:23,928 - INFO - Extracted 34 keywords for XMP
+2025-05-20 19:01:23,928 - INFO - Scene description: A skateboarder is captured mid-air, performing a t...
+2025-05-20 19:01:23,931 - INFO - New XMP file saved
+2025-05-20 19:01:23,931 - INFO - Image processed successfully in 34.74 seconds: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08116.ARW
+2025-05-20 19:01:27,387 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:01:27,388 - INFO - Raw model response for DSC08299.ARW: ```json
+{
+"subjects": ["skate park", "indoor sports", "action", "movement", "sports competition"],
+"scene": "The photograph depicts a bustling indoor skate park, where a young man is walking towards t...
+2025-05-20 19:01:27,388 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:01:27,388 - INFO - Raw JSON data before extraction: {'subjects': ['skate park', 'indoor sports', 'action', 'movement', 'sports competition'], 'scene': 'The photograph depicts a bustling indoor skate park, where a young man is walking towards the camera...
+2025-05-20 19:01:27,389 - INFO - Extracted keywords: ['skate park', 'indoor sports', 'action', 'movement', 'sports competition', 'skate ramp', 'concrete', 'crowd', 'sign', 'staircase']...
+2025-05-20 19:01:27,389 - INFO - Extracted 39 unique keywords and scene description: The photograph depicts a bustling indoor skate par...
+2025-05-20 19:01:27,389 - INFO - Extracted 39 keywords for XMP
+2025-05-20 19:01:27,389 - INFO - Scene description: The photograph depicts a bustling indoor skate par...
+2025-05-20 19:01:27,392 - INFO - New XMP file saved
+2025-05-20 19:01:27,392 - INFO - Image processed successfully in 38.22 seconds: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08299.ARW
+2025-05-20 19:01:33,235 - INFO - Raw model response for DSC09062.ARW: ```json
+{
+"subjects": ["skateboarding", "indoor", "crowd", "competition", "sports", "youth"],
+"scene": "The photograph captures an indoor skateboarding competition, showing a large crowd gathered arou...
+2025-05-20 19:01:33,235 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:01:33,236 - INFO - Raw JSON data before extraction: {'subjects': ['skateboarding', 'indoor', 'crowd', 'competition', 'sports', 'youth'], 'scene': 'The photograph captures an indoor skateboarding competition, showing a large crowd gathered around a skat...
+2025-05-20 19:01:33,236 - INFO - Extracted keywords: ['skateboarding', 'indoor', 'crowd', 'competition', 'sports', 'youth', 'skatepark', 'ramps', 'rails', 'crowd barrier']...
+2025-05-20 19:01:33,236 - INFO - Extracted 50 unique keywords and scene description: The photograph captures an indoor skateboarding co...
+2025-05-20 19:01:33,236 - INFO - Extracted 45 keywords for XMP
+2025-05-20 19:01:33,236 - INFO - Scene description: The photograph captures an indoor skateboarding co...
+2025-05-20 19:01:33,239 - INFO - New XMP file saved
+2025-05-20 19:01:33,240 - INFO - Image processed successfully in 44.05 seconds: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC09062.ARW
+2025-05-20 19:01:34,286 - INFO - Raw model response for DSC07864.ARW: ```json
+{
+"subjects": ["skating", "people", "conversation", "indoor", "recreation"],
+"scene": "Two men are engaged in a conversation while standing on a large, slightly-worn ice skating rink with othe...
+2025-05-20 19:01:34,286 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:01:34,286 - INFO - Raw JSON data before extraction: {'subjects': ['skating', 'people', 'conversation', 'indoor', 'recreation'], 'scene': 'Two men are engaged in a conversation while standing on a large, slightly-worn ice skating rink with other skaters...
+2025-05-20 19:01:34,286 - INFO - Extracted keywords: ['skating', 'people', 'conversation', 'indoor', 'recreation', 'ice rink', 'skates', 'jacket', 'hoodie', 'helmet']...
+2025-05-20 19:01:34,286 - INFO - Extracted 35 unique keywords and scene description: Two men are engaged in a conversation while standi...
+2025-05-20 19:01:34,286 - INFO - Extracted 34 keywords for XMP
+2025-05-20 19:01:34,286 - INFO - Scene description: Two men are engaged in a conversation while standi...
+2025-05-20 19:01:34,289 - INFO - New XMP file saved
+2025-05-20 19:01:34,289 - INFO - Image processed successfully in 45.13 seconds: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC07864.ARW
+2025-05-20 19:01:38,317 - INFO - Raw model response for DSC09415.ARW: ```json
+{
+"subjects": ["landscape", "ocean", "coastline", "sea", "rocks", "nature"],
+"scene": "The photograph captures a dramatic coastline view at dusk, featuring jagged rock formations emerging from...
+2025-05-20 19:01:38,317 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:01:38,317 - INFO - Raw JSON data before extraction: {'subjects': ['landscape', 'ocean', 'coastline', 'sea', 'rocks', 'nature'], 'scene': 'The photograph captures a dramatic coastline view at dusk, featuring jagged rock formations emerging from the wate...
+2025-05-20 19:01:38,317 - INFO - Extracted keywords: ['landscape', 'ocean', 'coastline', 'sea', 'rocks', 'nature', 'rocks', 'cliff', 'ocean', 'waves']...
+2025-05-20 19:01:38,317 - INFO - Extracted 34 unique keywords and scene description: The photograph captures a dramatic coastline view ...
+2025-05-20 19:01:38,317 - INFO - Extracted 32 keywords for XMP
+2025-05-20 19:01:38,318 - INFO - Scene description: The photograph captures a dramatic coastline view ...
+2025-05-20 19:01:38,320 - INFO - New XMP file saved
+2025-05-20 19:01:38,320 - INFO - Image processed successfully in 49.17 seconds: G:/PHOTOS/PHOTOS_DE_2019\QUIBERON\DSC09415.ARW
+2025-05-20 19:01:38,322 - INFO - Pausing for 30.0 seconds between batches
+2025-05-20 19:01:50,790 - INFO - Instance Ollama https://meerkat-valued-ant.ngrok-free.app/: Available
+2025-05-20 19:01:50,790 - INFO - Detected 1 overloaded instances
+2025-05-20 19:01:50,790 - INFO - Resetting statistics for overloaded instance: https://meerkat-valued-ant.ngrok-free.app/
+2025-05-20 19:01:50,790 - INFO - Statistics reset for instance https://meerkat-valued-ant.ngrok-free.app/
+2025-05-20 19:01:53,947 - INFO - Instance Ollama https://meerkat-valued-ant.ngrok-free.app/: Available
+2025-05-20 19:01:53,947 - INFO - Detected 1 overloaded instances
+2025-05-20 19:01:53,947 - INFO - Resetting statistics for overloaded instance: https://meerkat-valued-ant.ngrok-free.app/
+2025-05-20 19:01:53,947 - INFO - Statistics reset for instance https://meerkat-valued-ant.ngrok-free.app/
+2025-05-20 19:02:08,323 - INFO - Processing batch of 30 images (adaptive size: 30)
+2025-05-20 19:02:08,824 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\PEROU\DSC01684.ARW
+2025-05-20 19:02:08,825 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,825 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08585.ARW
+2025-05-20 19:02:08,825 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,825 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC07932.ARW
+2025-05-20 19:02:08,825 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,825 - INFO - RAW file detected: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08585.ARW, minimal metadata created
+2025-05-20 19:02:08,825 - INFO - Metadata extracted: 3 elements
+2025-05-20 19:02:08,826 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\MAELLE\NOUVELAN\DSC03130.ARW
+2025-05-20 19:02:08,826 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,826 - INFO - RAW file detected: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC07932.ARW, minimal metadata created
+2025-05-20 19:02:08,826 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\QUIBERON\DSC09514.ARW
+2025-05-20 19:02:08,826 - INFO - Metadata extracted: 3 elements
+2025-05-20 19:02:08,826 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,827 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\AURILLAC\DSC02569.ARW
+2025-05-20 19:02:08,827 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\LA_STREET_REPUBLIQUE\DSC00059.ARW
+2025-05-20 19:02:08,827 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\POI-AD-7-ANS\DSC00513.ARW
+2025-05-20 19:02:08,827 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,827 - INFO - RAW file detected: G:/PHOTOS/PHOTOS_DE_2019\QUIBERON\DSC09514.ARW, minimal metadata created
+2025-05-20 19:02:08,828 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\JARDIN_DES_PLANTES\DSC02969.ARW
+2025-05-20 19:02:08,828 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,828 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,828 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\MAELLE\NOUVELAN\DSC02999.ARW
+2025-05-20 19:02:08,828 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\PEROU\DSC01631.ARW
+2025-05-20 19:02:08,828 - INFO - Metadata extracted: 3 elements
+2025-05-20 19:02:08,828 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,829 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\POI-AD-7-ANS\DSC00917.ARW
+2025-05-20 19:02:08,829 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08709.ARW
+2025-05-20 19:02:08,829 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,829 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\LA_STREET_REPUBLIQUE\DSC00221.ARW
+2025-05-20 19:02:08,829 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,830 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\POI-AD-7-ANS\DSC00458.ARW
+2025-05-20 19:02:08,830 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,830 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\PEROU\DSC01655.ARW
+2025-05-20 19:02:08,830 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,830 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\PEROU\DSC02260.ARW
+2025-05-20 19:02:08,831 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,831 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\POI-AD-7-ANS\DSC00804.ARW
+2025-05-20 19:02:08,831 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,831 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\POI-AD-7-ANS\DSC00840.ARW
+2025-05-20 19:02:08,832 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\CDF-10ANS\DSC01367.ARW
+2025-05-20 19:02:08,832 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,832 - INFO - RAW file detected: G:/PHOTOS/PHOTOS_DE_2019\POI-AD-7-ANS\DSC00917.ARW, minimal metadata created
+2025-05-20 19:02:08,832 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\MARCHE_CLIMAT\DSC09299.ARW
+2025-05-20 19:02:08,832 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,832 - INFO - RAW file detected: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08709.ARW, minimal metadata created
+2025-05-20 19:02:08,832 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\PEROU\DSC01698.ARW
+2025-05-20 19:02:08,833 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\QUIBERON\DSC09471.ARW
+2025-05-20 19:02:08,833 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,833 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08196.ARW
+2025-05-20 19:02:08,833 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,833 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\POI-AD-7-ANS\DSC00355.ARW
+2025-05-20 19:02:08,834 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,834 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC09090.ARW
+2025-05-20 19:02:08,834 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\AURILLAC\DSC02643.ARW
+2025-05-20 19:02:08,834 - INFO - Metadata extracted: 3 elements
+2025-05-20 19:02:08,834 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,835 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\QUIBERON\DSC09508.ARW
+2025-05-20 19:02:08,835 - INFO - Metadata extracted: 3 elements
+2025-05-20 19:02:08,835 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\PEROU\DSC02296.ARW
+2025-05-20 19:02:08,835 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,835 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,835 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\POI-AD-7-ANS\DSC00771.ARW
+2025-05-20 19:02:08,836 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,836 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,836 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,836 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,837 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,837 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,837 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:02:08,837 - INFO - RAW file detected: G:/PHOTOS/PHOTOS_DE_2019\QUIBERON\DSC09471.ARW, minimal metadata created
+2025-05-20 19:02:08,838 - INFO - RAW file detected: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08196.ARW, minimal metadata created
+2025-05-20 19:02:08,838 - INFO - RAW file detected: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC09090.ARW, minimal metadata created
+2025-05-20 19:02:08,838 - INFO - RAW file detected: G:/PHOTOS/PHOTOS_DE_2019\QUIBERON\DSC09508.ARW, minimal metadata created
+2025-05-20 19:02:08,838 - INFO - Metadata extracted: 3 elements
+2025-05-20 19:02:08,839 - INFO - Metadata extracted: 3 elements
+2025-05-20 19:02:08,839 - INFO - Metadata extracted: 3 elements
+2025-05-20 19:02:08,839 - INFO - Metadata extracted: 3 elements
+2025-05-20 19:02:08,859 - INFO - XMP file with keywords already exists, skipped
+2025-05-20 19:02:09,147 - INFO - RAW file detected: G:/PHOTOS/PHOTOS_DE_2019\POI-AD-7-ANS\DSC00840.ARW, minimal metadata created
+2025-05-20 19:02:09,147 - INFO - Existing XMP file found: G:/PHOTOS/PHOTOS_DE_2019\POI-AD-7-ANS\DSC00840.xmp
+2025-05-20 19:02:09,147 - INFO - Metadata extracted: 4 elements
+2025-05-20 19:02:09,158 - INFO - XMP file with keywords already exists, skipped
+2025-05-20 19:02:15,010 - INFO - RAW file converted to JPEG: C:\Users\Jlauzes\AppData\Local\Temp\tmpvtrkstmn\temp_raw_DSC07932.ARW.jpg
+2025-05-20 19:02:15,011 - INFO - RAW file converted to JPEG: C:\Users\Jlauzes\AppData\Local\Temp\tmpzjzy0o6m\temp_raw_DSC09090.ARW.jpg
+2025-05-20 19:02:15,039 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 0, total: 0)
+2025-05-20 19:02:15,039 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:02:15,039 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 1, total: 0)
+2025-05-20 19:02:15,039 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:02:15,040 - INFO - RAW file converted to JPEG: C:\Users\Jlauzes\AppData\Local\Temp\tmp1jahnj9y\temp_raw_DSC08196.ARW.jpg
+2025-05-20 19:02:15,040 - INFO - RAW file converted to JPEG: C:\Users\Jlauzes\AppData\Local\Temp\tmpfan1zvbc\temp_raw_DSC09471.ARW.jpg
+2025-05-20 19:02:15,060 - WARNING - All instances are overloaded, adding a recovery pause
+2025-05-20 19:02:15,062 - WARNING - All instances are overloaded, adding a recovery pause
+2025-05-20 19:02:17,062 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 2, total: 0)
+2025-05-20 19:02:17,062 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:02:17,062 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 3, total: 0)
+2025-05-20 19:02:19,024 - INFO - RAW file converted to JPEG: C:\Users\Jlauzes\AppData\Local\Temp\tmptoodcklc\temp_raw_DSC09508.ARW.jpg
+2025-05-20 19:02:19,042 - WARNING - All instances are overloaded, adding a recovery pause
+2025-05-20 19:02:19,080 - INFO - RAW file converted to JPEG: C:\Users\Jlauzes\AppData\Local\Temp\tmplopojwc4\temp_raw_DSC09514.ARW.jpg
+2025-05-20 19:02:19,100 - WARNING - All instances are overloaded, adding a recovery pause
+2025-05-20 19:02:19,100 - INFO - RAW file converted to JPEG: C:\Users\Jlauzes\AppData\Local\Temp\tmps5gfnuz9\temp_raw_DSC00840.ARW.jpg
+2025-05-20 19:02:19,101 - INFO - RAW file converted to JPEG: C:\Users\Jlauzes\AppData\Local\Temp\tmpnhds1b5a\temp_raw_DSC08585.ARW.jpg
+2025-05-20 19:02:19,119 - WARNING - All instances are overloaded, adding a recovery pause
+2025-05-20 19:02:19,120 - WARNING - All instances are overloaded, adding a recovery pause
+2025-05-20 19:02:20,537 - INFO - RAW file converted to JPEG: C:\Users\Jlauzes\AppData\Local\Temp\tmps6urpgs4\temp_raw_DSC08709.ARW.jpg
+2025-05-20 19:02:20,548 - WARNING - All instances are overloaded, adding a recovery pause
+2025-05-20 19:02:20,551 - INFO - RAW file converted to JPEG: C:\Users\Jlauzes\AppData\Local\Temp\tmpndtvo7k6\temp_raw_DSC00917.ARW.jpg
+2025-05-20 19:02:20,564 - WARNING - All instances are overloaded, adding a recovery pause
+2025-05-20 19:02:21,043 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 3, total: 0)
+2025-05-20 19:02:21,102 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 3, total: 0)
+2025-05-20 19:02:21,120 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 3, total: 0)
+2025-05-20 19:02:21,121 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 3, total: 0)
+2025-05-20 19:02:22,549 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 3, total: 0)
+2025-05-20 19:02:22,565 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 3, total: 0)
+2025-05-20 19:02:23,237 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:02:23,237 - INFO - Raw model response for DSC07932.ARW: ```json
+{
+"subjects": ["skateboarding", "action", "sport", "extreme sport", "athlete"],
+"scene": "A skateboarder is captured mid-air performing a trick over a vibrant blue and turquoise quarter pipe w...
+2025-05-20 19:02:23,237 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:02:23,237 - INFO - Raw JSON data before extraction: {'subjects': ['skateboarding', 'action', 'sport', 'extreme sport', 'athlete'], 'scene': 'A skateboarder is captured mid-air performing a trick over a vibrant blue and turquoise quarter pipe within a l...
+2025-05-20 19:02:23,237 - INFO - Extracted keywords: ['skateboarding', 'action', 'sport', 'extreme sport', 'athlete', 'skateboard', 'quarter pipe', 'ramp', 'handrail', 'building']...
+2025-05-20 19:02:23,237 - INFO - Extracted 37 unique keywords and scene description: A skateboarder is captured mid-air performing a tr...
+2025-05-20 19:02:23,237 - INFO - Extracted 36 keywords for XMP
+2025-05-20 19:02:23,237 - INFO - Scene description: A skateboarder is captured mid-air performing a tr...
+2025-05-20 19:02:23,240 - INFO - New XMP file saved
+2025-05-20 19:02:23,240 - INFO - Image processed successfully in 14.42 seconds: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC07932.ARW
+2025-05-20 19:02:24,380 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:02:24,380 - INFO - Raw model response for DSC09090.ARW: ```json
+{
+"subjects": ["crowd", "people", "event", "gathering", "audience", "indoor", "stage"],
+"scene": "A large crowd of people is packed into a spacious, indoor venue with a dark backdrop, seemingl...
+2025-05-20 19:02:24,380 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:02:24,380 - INFO - Raw JSON data before extraction: {'subjects': ['crowd', 'people', 'event', 'gathering', 'audience', 'indoor', 'stage'], 'scene': 'A large crowd of people is packed into a spacious, indoor venue with a dark backdrop, seemingly at an e...
+2025-05-20 19:02:24,381 - INFO - Extracted keywords: ['crowd', 'people', 'event', 'gathering', 'audience', 'indoor', 'stage', 'phones', 'cameras', 'stage']...
+2025-05-20 19:02:24,381 - INFO - Extracted 46 unique keywords and scene description: A large crowd of people is packed into a spacious,...
+2025-05-20 19:02:24,381 - INFO - Extracted 45 keywords for XMP
+2025-05-20 19:02:24,381 - INFO - Scene description: A large crowd of people is packed into a spacious,...
+2025-05-20 19:02:24,385 - INFO - New XMP file saved
+2025-05-20 19:02:24,385 - INFO - Image processed successfully in 15.55 seconds: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC09090.ARW
+2025-05-20 19:02:30,679 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:02:30,680 - INFO - Raw model response for DSC09471.ARW: ```json
+{
+"subjects": ["landscape", "seascape", "rock formations", "coastal", "nature"],
+"scene": "The photograph depicts a rugged, rocky coastline with dark brown and reddish-brown cliffs dramaticall...
+2025-05-20 19:02:30,680 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:02:30,680 - INFO - Raw JSON data before extraction: {'subjects': ['landscape', 'seascape', 'rock formations', 'coastal', 'nature'], 'scene': 'The photograph depicts a rugged, rocky coastline with dark brown and reddish-brown cliffs dramatically meeting...
+2025-05-20 19:02:30,680 - INFO - Extracted keywords: ['landscape', 'seascape', 'rock formations', 'coastal', 'nature', 'rocks', 'cliffs', 'ocean', 'waves', 'soft lighting']...
+2025-05-20 19:02:30,680 - INFO - Extracted 28 unique keywords and scene description: The photograph depicts a rugged, rocky coastline w...
+2025-05-20 19:02:30,680 - INFO - Extracted 28 keywords for XMP
+2025-05-20 19:02:30,681 - INFO - Scene description: The photograph depicts a rugged, rocky coastline w...
+2025-05-20 19:02:30,683 - INFO - New XMP file saved
+2025-05-20 19:02:30,684 - INFO - Image processed successfully in 21.85 seconds: G:/PHOTOS/PHOTOS_DE_2019\QUIBERON\DSC09471.ARW
+2025-05-20 19:02:32,806 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:02:32,806 - INFO - Raw model response for DSC08196.ARW: ```json
+{
+"subjects": ["skateboarding", "action", "sports", "indoor", "extreme sports", "activity", "movement"],
+"scene": "A young male skateboarder is in mid-air, performing a trick on a wooden ramp ...
+2025-05-20 19:02:32,807 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:02:32,807 - INFO - Raw JSON data before extraction: {'subjects': ['skateboarding', 'action', 'sports', 'indoor', 'extreme sports', 'activity', 'movement'], 'scene': 'A young male skateboarder is in mid-air, performing a trick on a wooden ramp inside an...
+2025-05-20 19:02:32,807 - INFO - Extracted keywords: ['skateboarding', 'action', 'sports', 'indoor', 'extreme sports', 'activity', 'movement', 'skateboard', 'ramp', 'wooden surface']...
+2025-05-20 19:02:32,807 - INFO - Extracted 46 unique keywords and scene description: A young male skateboarder is in mid-air, performin...
+2025-05-20 19:02:32,807 - INFO - Extracted 42 keywords for XMP
+2025-05-20 19:02:32,807 - INFO - Scene description: A young male skateboarder is in mid-air, performin...
+2025-05-20 19:02:32,810 - INFO - New XMP file saved
+2025-05-20 19:02:32,811 - INFO - Image processed successfully in 23.98 seconds: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08196.ARW
+2025-05-20 19:02:39,642 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:02:39,642 - INFO - Raw model response for DSC09508.ARW: ```json
+{
+"subjects": ["group", "railroad tracks", "nature", "outdoors", "people", "travel", "friendship"],
+"scene": "A group of six young people are playfully posing on and around a section of railro...
+2025-05-20 19:02:39,642 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:02:39,643 - INFO - Raw JSON data before extraction: {'subjects': ['group', 'railroad tracks', 'nature', 'outdoors', 'people', 'travel', 'friendship'], 'scene': 'A group of six young people are playfully posing on and around a section of railroad tracks...
+2025-05-20 19:02:39,643 - INFO - Extracted keywords: ['group', 'railroad tracks', 'nature', 'outdoors', 'people', 'travel', 'friendship', 'railroad tracks', 'foliage', 'sky']...
+2025-05-20 19:02:39,643 - INFO - Extracted 45 unique keywords and scene description: A group of six young people are playfully posing o...
+2025-05-20 19:02:39,643 - INFO - Extracted 40 keywords for XMP
+2025-05-20 19:02:39,643 - INFO - Scene description: A group of six young people are playfully posing o...
+2025-05-20 19:02:39,647 - INFO - New XMP file saved
+2025-05-20 19:02:39,647 - INFO - Image processed successfully in 30.81 seconds: G:/PHOTOS/PHOTOS_DE_2019\QUIBERON\DSC09508.ARW
+2025-05-20 19:02:40,521 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:02:40,521 - INFO - Raw model response for DSC09514.ARW: ```json
+{
+"subjects": ["path", "railroad tracks", "nature", "landscape", "rural scene"],
+"scene": "A long, dirt path runs parallel to a set of railroad tracks through a vibrant green field filled with...
+2025-05-20 19:02:40,521 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:02:40,521 - INFO - Raw JSON data before extraction: {'subjects': ['path', 'railroad tracks', 'nature', 'landscape', 'rural scene'], 'scene': 'A long, dirt path runs parallel to a set of railroad tracks through a vibrant green field filled with yellow w...
+2025-05-20 19:02:40,522 - INFO - Extracted keywords: ['path', 'railroad tracks', 'nature', 'landscape', 'rural scene', 'dirt path', 'railroad tracks', 'wildflowers', 'signpost', 'trees']...
+2025-05-20 19:02:40,522 - INFO - Extracted 35 unique keywords and scene description: A long, dirt path runs parallel to a set of railro...
+2025-05-20 19:02:40,522 - INFO - Extracted 34 keywords for XMP
+2025-05-20 19:02:40,522 - INFO - Scene description: A long, dirt path runs parallel to a set of railro...
+2025-05-20 19:02:40,524 - INFO - New XMP file saved
+2025-05-20 19:02:40,524 - INFO - Image processed successfully in 31.70 seconds: G:/PHOTOS/PHOTOS_DE_2019\QUIBERON\DSC09514.ARW
+2025-05-20 19:02:46,522 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:02:46,522 - INFO - Raw model response for DSC00840.ARW: ```json
+{
+"subjects": ["night", "motion blur", "person", "lights", "bokeh"],
+"scene": "The photograph captures a blurred scene at night, featuring a silhouetted person seemingly in motion, surrounded ...
+2025-05-20 19:02:46,522 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:02:46,523 - INFO - Raw JSON data before extraction: {'subjects': ['night', 'motion blur', 'person', 'lights', 'bokeh'], 'scene': 'The photograph captures a blurred scene at night, featuring a silhouetted person seemingly in motion, surrounded by vibran...
+2025-05-20 19:02:46,523 - INFO - Extracted keywords: ['night', 'motion blur', 'person', 'lights', 'bokeh', 'water', 'lights', 'trees', 'streetlights', 'night']...
+2025-05-20 19:02:46,523 - INFO - Extracted 33 unique keywords and scene description: The photograph captures a blurred scene at night, ...
+2025-05-20 19:02:46,523 - INFO - Extracted 27 keywords for XMP
+2025-05-20 19:02:46,523 - INFO - Scene description: The photograph captures a blurred scene at night, ...
+2025-05-20 19:02:46,524 - INFO - Existing XMP file found and will be preserved: G:/PHOTOS/PHOTOS_DE_2019\POI-AD-7-ANS\DSC00840.xmp
+2025-05-20 19:02:46,526 - INFO - Updated XMP file preserving existing settings
+2025-05-20 19:02:46,526 - INFO - Image processed successfully in 37.70 seconds: G:/PHOTOS/PHOTOS_DE_2019\POI-AD-7-ANS\DSC00840.ARW
+2025-05-20 19:02:47,938 - INFO - Raw model response for DSC08585.ARW: ```json
+{
+"subjects": ["skateboarding", "action", "sport", "indoor", "youth"],
+"scene": "The photograph depicts a vibrant indoor skatepark filled with a large crowd observing a skateboarding event, wi...
+2025-05-20 19:02:47,939 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:02:47,939 - INFO - Raw JSON data before extraction: {'subjects': ['skateboarding', 'action', 'sport', 'indoor', 'youth'], 'scene': 'The photograph depicts a vibrant indoor skatepark filled with a large crowd observing a skateboarding event, with a comp...
+2025-05-20 19:02:47,939 - INFO - Extracted keywords: ['skateboarding', 'action', 'sport', 'indoor', 'youth', 'skatepark', 'ramp', 'transition', 'helmet', 'sign']...
+2025-05-20 19:02:47,939 - INFO - Extracted 36 unique keywords and scene description: The photograph depicts a vibrant indoor skatepark ...
+2025-05-20 19:02:47,939 - INFO - Extracted 35 keywords for XMP
+2025-05-20 19:02:47,939 - INFO - Scene description: The photograph depicts a vibrant indoor skatepark ...
+2025-05-20 19:02:47,942 - INFO - New XMP file saved
+2025-05-20 19:02:47,942 - INFO - Image processed successfully in 39.12 seconds: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08585.ARW
+2025-05-20 19:02:51,517 - INFO - Instance Ollama https://meerkat-valued-ant.ngrok-free.app/: Available
+2025-05-20 19:02:51,517 - INFO - Detected 1 overloaded instances
+2025-05-20 19:02:51,517 - INFO - Resetting statistics for overloaded instance: https://meerkat-valued-ant.ngrok-free.app/
+2025-05-20 19:02:51,517 - INFO - Statistics reset for instance https://meerkat-valued-ant.ngrok-free.app/
+2025-05-20 19:02:53,622 - INFO - Raw model response for DSC08709.ARW: ```json
+{
+"subjects": ["man", "portrait", "face", "person", "head"],
+"scene": "The photograph depicts a man, partially obscured by darkness, looking upwards towards a bright, blurred light source, sug...
+2025-05-20 19:02:53,622 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:02:53,622 - INFO - Raw JSON data before extraction: {'subjects': ['man', 'portrait', 'face', 'person', 'head'], 'scene': 'The photograph depicts a man, partially obscured by darkness, looking upwards towards a bright, blurred light source, suggesting h...
+2025-05-20 19:02:53,622 - INFO - Extracted keywords: ['man', 'portrait', 'face', 'person', 'head', 'head', 'face', 'hair', 'neck', 'clothing']...
+2025-05-20 19:02:53,622 - INFO - Extracted 37 unique keywords and scene description: The photograph depicts a man, partially obscured b...
+2025-05-20 19:02:53,622 - INFO - Extracted 34 keywords for XMP
+2025-05-20 19:02:53,622 - INFO - Scene description: The photograph depicts a man, partially obscured b...
+2025-05-20 19:02:53,624 - INFO - New XMP file saved
+2025-05-20 19:02:53,625 - INFO - Image processed successfully in 44.80 seconds: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08709.ARW
+2025-05-20 19:02:54,701 - INFO - Instance Ollama https://meerkat-valued-ant.ngrok-free.app/: Available
+2025-05-20 19:02:54,701 - INFO - Detected 1 overloaded instances
+2025-05-20 19:02:54,701 - INFO - Resetting statistics for overloaded instance: https://meerkat-valued-ant.ngrok-free.app/
+2025-05-20 19:02:54,701 - INFO - Statistics reset for instance https://meerkat-valued-ant.ngrok-free.app/
+2025-05-20 19:02:55,212 - INFO - Raw model response for DSC00917.ARW: ```json
+{
+"subjects": ["fire", "performance", "night", "silhouette", "people", "entertainment"],
+"scene": "A nighttime scene depicts a performer juggling flaming torches in front of a dark body of wat...
+2025-05-20 19:02:55,212 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:02:55,212 - INFO - Raw JSON data before extraction: {'subjects': ['fire', 'performance', 'night', 'silhouette', 'people', 'entertainment'], 'scene': 'A nighttime scene depicts a performer juggling flaming torches in front of a dark body of water, with ...
+2025-05-20 19:02:55,212 - INFO - Extracted keywords: ['fire', 'performance', 'night', 'silhouette', 'people', 'entertainment', 'fire torches', 'water', 'trees', 'buildings']...
+2025-05-20 19:02:55,212 - INFO - Extracted 46 unique keywords and scene description: A nighttime scene depicts a performer juggling fla...
+2025-05-20 19:02:55,212 - INFO - Extracted 44 keywords for XMP
+2025-05-20 19:02:55,212 - INFO - Scene description: A nighttime scene depicts a performer juggling fla...
+2025-05-20 19:02:55,215 - INFO - New XMP file saved
+2025-05-20 19:02:55,215 - INFO - Image processed successfully in 46.39 seconds: G:/PHOTOS/PHOTOS_DE_2019\POI-AD-7-ANS\DSC00917.ARW
+2025-05-20 19:02:55,217 - INFO - Pausing for 30.0 seconds between batches
+2025-05-20 19:03:25,218 - INFO - Processing batch of 30 images (adaptive size: 30)
+2025-05-20 19:03:25,719 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\CDF-10ANS\DSC01256.ARW
+2025-05-20 19:03:25,719 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,719 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\LA_STREET_REPUBLIQUE\DSC09652.ARW
+2025-05-20 19:03:25,719 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,719 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\MAELLE\DSC00939.ARW
+2025-05-20 19:03:25,719 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,720 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\POI-AD-7-ANS\DSC00447.ARW
+2025-05-20 19:03:25,720 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,720 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\POI-AD-7-ANS\DSC00703.ARW
+2025-05-20 19:03:25,720 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,721 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\PEROU\DSC01890.ARW
+2025-05-20 19:03:25,721 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,721 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\POI-AD-7-ANS\DSC00532.ARW
+2025-05-20 19:03:25,721 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,721 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\CDF-10ANS\DSC01451.ARW
+2025-05-20 19:03:25,722 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,722 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\LA_STREET_REPUBLIQUE\DSC00033.ARW
+2025-05-20 19:03:25,722 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,722 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\JARDIN_DES_PLANTES\DSC02954.ARW
+2025-05-20 19:03:25,722 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,723 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\QUIBERON\QUIBERON-MELOU\QUIBERON\Quiberon-72.jpg
+2025-05-20 19:03:25,723 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,723 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08258.ARW
+2025-05-20 19:03:25,723 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\PEROU\DSC01770.ARW
+2025-05-20 19:03:25,723 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,723 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,724 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\PEROU\DSC01940.ARW
+2025-05-20 19:03:25,724 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08689.ARW
+2025-05-20 19:03:25,724 - INFO - RAW file detected: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08258.ARW, minimal metadata created
+2025-05-20 19:03:25,724 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,724 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\PEROU\DSC01537.ARW
+2025-05-20 19:03:25,724 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,725 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\POI-AD-7-ANS\DSC00755.ARW
+2025-05-20 19:03:25,725 - INFO - Metadata extracted: 3 elements
+2025-05-20 19:03:25,725 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,725 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\PEROU\DSC02346.ARW
+2025-05-20 19:03:25,725 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,726 - INFO - RAW file detected: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08689.ARW, minimal metadata created
+2025-05-20 19:03:25,726 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\MARCHE_CLIMAT\DSC09333.ARW
+2025-05-20 19:03:25,726 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\PEROU\DSC02337.ARW
+2025-05-20 19:03:25,726 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,727 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\PEROU\DSC02213.ARW
+2025-05-20 19:03:25,727 - INFO - Metadata extracted: 3 elements
+2025-05-20 19:03:25,727 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,727 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\MARCHE_CLIMAT\DSC09338-Avec accentuation-Bruit.dng
+2025-05-20 19:03:25,727 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,727 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\MAELLE\DSC01044.ARW
+2025-05-20 19:03:25,728 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\MAELLE\NOUVELAN\DSC03029.ARW
+2025-05-20 19:03:25,728 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,728 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\AURILLAC\DSC02830.ARW
+2025-05-20 19:03:25,728 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\MARCHE_CLIMAT\DSC09334.ARW
+2025-05-20 19:03:25,728 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,729 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\LA_STREET_REPUBLIQUE\DSC00166.ARW
+2025-05-20 19:03:25,729 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,729 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\AURILLAC\DSC02651.ARW
+2025-05-20 19:03:25,729 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,729 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\AURILLAC\DSC02657.ARW
+2025-05-20 19:03:25,730 - INFO - Processing G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08027.ARW
+2025-05-20 19:03:25,730 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,730 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,730 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,730 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,730 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,730 - INFO - Using model: gemma3:12b with temperature: 0.5
+2025-05-20 19:03:25,731 - INFO - RAW file detected: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08027.ARW, minimal metadata created
+2025-05-20 19:03:25,731 - INFO - Metadata extracted: 3 elements
+2025-05-20 19:03:25,742 - INFO - XMP file with keywords already exists, skipped
+2025-05-20 19:03:26,214 - INFO - Metadata extracted: 4 elements
+2025-05-20 19:03:27,736 - INFO - Image resized: G:/PHOTOS/PHOTOS_DE_2019\QUIBERON\QUIBERON-MELOU\QUIBERON\Quiberon-72.jpg -> C:\Users\Jlauzes\AppData\Local\Temp\temp_resize_Quiberon-72.jpg
+2025-05-20 19:03:27,744 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 0, total: 2)
+2025-05-20 19:03:27,744 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:03:30,310 - INFO - RAW file converted to JPEG: C:\Users\Jlauzes\AppData\Local\Temp\tmps82glhye\temp_raw_DSC08258.ARW.jpg
+2025-05-20 19:03:30,314 - INFO - RAW file converted to JPEG: C:\Users\Jlauzes\AppData\Local\Temp\tmpaadbdnay\temp_raw_DSC08027.ARW.jpg
+2025-05-20 19:03:30,325 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 1, total: 2)
+2025-05-20 19:03:30,325 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:03:30,326 - WARNING - All instances are overloaded, adding a recovery pause
+2025-05-20 19:03:30,327 - INFO - RAW file converted to JPEG: C:\Users\Jlauzes\AppData\Local\Temp\tmpv3xmof0i\temp_raw_DSC08689.ARW.jpg
+2025-05-20 19:03:30,337 - WARNING - All instances are overloaded, adding a recovery pause
+2025-05-20 19:03:32,327 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 2, total: 2)
+2025-05-20 19:03:32,327 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:03:32,338 - INFO - Selected instance https://meerkat-valued-ant.ngrok-free.app/ using strategy 'round_robin' (active: 3, total: 2)
+2025-05-20 19:03:35,849 - INFO - Envoi de la requête chat à https://meerkat-valued-ant.ngrok-free.app/ avec le modèle gemma3:12b (tentative 1/3)
+2025-05-20 19:03:35,850 - INFO - Raw model response for Quiberon-72.jpg: ```json
+{
+"subjects": ["ocean", "rocks", "coastline", "landscape", "sea", "nature", "outdoors", "scenery"],
+"scene": "The photograph depicts a rocky coastline with several people scattered across the ...
+2025-05-20 19:03:35,851 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:03:35,851 - INFO - Raw JSON data before extraction: {'subjects': ['ocean', 'rocks', 'coastline', 'landscape', 'sea', 'nature', 'outdoors', 'scenery'], 'scene': 'The photograph depicts a rocky coastline with several people scattered across the uneven te...
+2025-05-20 19:03:35,851 - INFO - Extracted keywords: ['ocean', 'rocks', 'coastline', 'landscape', 'sea', 'nature', 'outdoors', 'scenery', 'rocks', 'ocean']...
+2025-05-20 19:03:35,851 - INFO - Extracted 52 unique keywords and scene description: The photograph depicts a rocky coastline with seve...
+2025-05-20 19:03:35,851 - INFO - Extracted 42 keywords for XMP
+2025-05-20 19:03:35,851 - INFO - Scene description: The photograph depicts a rocky coastline with seve...
+2025-05-20 19:03:35,878 - INFO - New XMP file saved
+2025-05-20 19:03:36,250 - INFO - Metadata written to JPG file with Pillow (limited)
+2025-05-20 19:03:36,254 - INFO - Metadata written to JPG file: G:/PHOTOS/PHOTOS_DE_2019\QUIBERON\QUIBERON-MELOU\QUIBERON\Quiberon-72.jpg
+2025-05-20 19:03:36,254 - INFO - Image processed successfully in 10.53 seconds: G:/PHOTOS/PHOTOS_DE_2019\QUIBERON\QUIBERON-MELOU\QUIBERON\Quiberon-72.jpg
+2025-05-20 19:03:38,182 - INFO - Raw model response for DSC08258.ARW: ```json
+{
+"subjects": ["skateboarding", "sports", "action", "competition", "indoors", "youth"],
+"scene": "The photograph captures a vibrant indoor skate park scene, showcasing a young skateboarder in ...
+2025-05-20 19:03:38,182 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:03:38,182 - INFO - Raw JSON data before extraction: {'subjects': ['skateboarding', 'sports', 'action', 'competition', 'indoors', 'youth'], 'scene': 'The photograph captures a vibrant indoor skate park scene, showcasing a young skateboarder in motion al...
+2025-05-20 19:03:38,182 - INFO - Extracted keywords: ['skateboarding', 'sports', 'action', 'competition', 'indoors', 'youth', 'skateboard', 'ramp', 'obstacle', 'spectator seating']...
+2025-05-20 19:03:38,182 - INFO - Extracted 37 unique keywords and scene description: The photograph captures a vibrant indoor skate par...
+2025-05-20 19:03:38,182 - INFO - Extracted 37 keywords for XMP
+2025-05-20 19:03:38,182 - INFO - Scene description: The photograph captures a vibrant indoor skate par...
+2025-05-20 19:03:38,185 - INFO - New XMP file saved
+2025-05-20 19:03:38,185 - INFO - Image processed successfully in 12.46 seconds: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08258.ARW
+2025-05-20 19:03:43,577 - INFO - Raw model response for DSC08027.ARW: ```json
+{
+"subjects": ["skatepark", "indoor", "ramp", "action", "sport", "recreation"],
+"scene": "The photograph depicts a brightly lit indoor skatepark with several ramps and obstacles, where a group...
+2025-05-20 19:03:43,577 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:03:43,577 - INFO - Raw JSON data before extraction: {'subjects': ['skatepark', 'indoor', 'ramp', 'action', 'sport', 'recreation'], 'scene': 'The photograph depicts a brightly lit indoor skatepark with several ramps and obstacles, where a group of young...
+2025-05-20 19:03:43,578 - INFO - Extracted keywords: ['skatepark', 'indoor', 'ramp', 'action', 'sport', 'recreation', 'ramp', 'rail', 'staircase', 'banner']...
+2025-05-20 19:03:43,578 - INFO - Extracted 39 unique keywords and scene description: The photograph depicts a brightly lit indoor skate...
+2025-05-20 19:03:43,578 - INFO - Extracted 38 keywords for XMP
+2025-05-20 19:03:43,578 - INFO - Scene description: The photograph depicts a brightly lit indoor skate...
+2025-05-20 19:03:43,580 - INFO - New XMP file saved
+2025-05-20 19:03:43,580 - INFO - Image processed successfully in 17.85 seconds: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08027.ARW
+2025-05-20 19:03:44,935 - INFO - Raw model response for DSC08689.ARW: ```json
+{
+"subjects": ["skateboarding", "crowd", "action", "sport", "indoor"],
+"scene": "A large crowd gathers within a spacious, industrial-style building to witness a skateboarding competition on a ...
+2025-05-20 19:03:44,936 - INFO - Successfully parsed JSON response with metadata
+2025-05-20 19:03:44,936 - INFO - Raw JSON data before extraction: {'subjects': ['skateboarding', 'crowd', 'action', 'sport', 'indoor'], 'scene': 'A large crowd gathers within a spacious, industrial-style building to witness a skateboarding competition on a complex, ...
+2025-05-20 19:03:44,936 - INFO - Extracted keywords: ['skateboarding', 'crowd', 'action', 'sport', 'indoor', 'skate ramp', 'crowd barrier', 'microphone', 'sign', 'microphone stand']...
+2025-05-20 19:03:44,936 - INFO - Extracted 37 unique keywords and scene description: A large crowd gathers within a spacious, industria...
+2025-05-20 19:03:44,936 - INFO - Extracted 37 keywords for XMP
+2025-05-20 19:03:44,936 - INFO - Scene description: A large crowd gathers within a spacious, industria...
+2025-05-20 19:03:44,939 - INFO - New XMP file saved
+2025-05-20 19:03:44,939 - INFO - Image processed successfully in 19.22 seconds: G:/PHOTOS/PHOTOS_DE_2019\WINTERCLASH2019\DSC08689.ARW
+2025-05-20 19:03:44,941 - INFO - Pausing for 30.0 seconds between batches
+2025-05-20 19:03:52,290 - INFO - Instance Ollama https://meerkat-valued-ant.ngrok-free.app/: Available
+2025-05-20 19:03:52,290 - INFO - Detected 1 overloaded instances
+2025-05-20 19:03:52,290 - INFO - Resetting statistics for overloaded instance: https://meerkat-valued-ant.ngrok-free.app/

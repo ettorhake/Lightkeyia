@@ -41,6 +41,12 @@ ollama pull gemma3:4b
 ```
 Note : LightKeyia a été optimisé et testé avec le modèle gemma3:4b qui offre un excellent rapport performance/qualité pour l'analyse d'images.
 
+## Aperçu de l'application
+
+Voici un aperçu de l'interface de LightKeyia :
+
+![Aperçu de LightKeyia](Screenshot_1.png)
+
 ## Utilisation
 
 ### Mode Cloud (Recommandé pour de meilleures performances)
