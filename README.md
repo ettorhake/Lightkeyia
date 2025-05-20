@@ -89,6 +89,15 @@ Options principales :
    - Créer des collections intelligentes
    - Organiser vos séries thématiques
 
+## Téléchargement de la version compilée (.exe)
+
+Si vous ne souhaitez pas installer Python ou les dépendances, vous pouvez télécharger directement la version Windows compilée de LightKeyia :
+
+- Rendez-vous dans le répertoire `dist` du projet pour récupérer le fichier exécutable `.exe`.
+- Double-cliquez sur le fichier `.exe` pour lancer l'application sans installation supplémentaire.
+
+> **Remarque :** Si vous ne trouvez pas le dossier `dist`, il se peut que la version compilée ne soit pas encore disponible. Vous pouvez la générer vous-même avec [PyInstaller](https://www.pyinstaller.org/) ou attendre la prochaine release.
+
 ## Configuration
 
 Le fichier `config.py` contient les paramètres principaux de l'application :
