@@ -32,13 +32,11 @@ class ImageProcessorGUI:
         
         # Set application icon if available
         try:
-            if platform.system() == "Windows":
-                self.root.iconbitmap("icon.ico")
-            elif platform.system() == "Linux":
-                img = tk.PhotoImage(file="icon.png")
-                self.root.tk.call('wm', 'iconphoto', self.root._w, img)
-        except:
-            pass
+            icon_path = os.path.join(os.path.dirname(__file__), 'assets', 'logo.png')
+            if os.path.exists(icon_path):
+                self.root.iconphoto(True, tk.PhotoImage(file=icon_path))
+        except Exception as e:
+            logger.warning(f"Could not load application icon: {e}")
         
         # Initialize variables with default values
         self.model_var = tk.StringVar(value=DEFAULT_MODEL)
@@ -109,22 +107,28 @@ class ImageProcessorGUI:
         main_frame = ttk.Frame(self.root, padding="10")
         main_frame.pack(fill=tk.BOTH, expand=True)
         
+        # Create header frame for logo and notebook
+        header_frame = ttk.Frame(main_frame)
+        header_frame.pack(fill=tk.X, pady=(0, 5))
+        
+       
+        
         # Create notebook for tabs
-        notebook = ttk.Notebook(main_frame)
-        notebook.pack(fill=tk.BOTH, expand=True, pady=5)
+        notebook = ttk.Notebook(header_frame)
+        notebook.pack(side=tk.LEFT, fill=tk.X, expand=True)
         
         # Create tabs
         process_tab = ttk.Frame(notebook)
         settings_tab = ttk.Frame(notebook)
-        instances_tab = ttk.Frame(notebook)  # Onglet pour les instances Ollama
-        docker_tab = ttk.Frame(notebook)     # Nouvel onglet pour Docker
-        monitor_tab = ttk.Frame(notebook)    # Onglet pour le monitoring
+        instances_tab = ttk.Frame(notebook)
+        docker_tab = ttk.Frame(notebook)
+        monitor_tab = ttk.Frame(notebook)
         about_tab = ttk.Frame(notebook)
         
         notebook.add(process_tab, text="Process")
         notebook.add(settings_tab, text="Settings")
         notebook.add(instances_tab, text="Instances")
-        notebook.add(docker_tab, text="Docker")      # Ajouter l'onglet Docker
+        notebook.add(docker_tab, text="Docker")
         notebook.add(monitor_tab, text="Monitor")
         notebook.add(about_tab, text="About")
         
@@ -688,12 +692,24 @@ health_based: Selects instances based on a comprehensive health score (recommend
         ttk.Label(about_frame, text="A tool to analyze images with Ollama and generate keywords in XMP files.").pack(pady=5)
         ttk.Label(about_frame, text="Compatible with standard and RAW formats.").pack(pady=5)
         
+        # Load and display logo in About tab
+        try:
+            logo_path = os.path.join(os.path.dirname(__file__), 'assets', 'logo.png')
+            if os.path.exists(logo_path):
+                # Create PhotoImage for About tab
+                self.about_logo = tk.PhotoImage(file=logo_path)
+                # Resize the image to 32x32 for About tab
+                self.about_logo = self.about_logo.subsample(10, 10)  # Augmenté de 2 à 4 pour réduire plus
+                logo_label = ttk.Label(about_frame, image=self.about_logo, background=COLORS['bg'])
+                logo_label.pack(pady=5)  # Réduit le padding vertical
+        except Exception as e:
+            logger.warning(f"Could not load logo in About tab: {e}")
+        
         # Dependencies info
         deps_frame = ttk.LabelFrame(about_frame, text="Dependencies", padding="10")
         deps_frame.pack(fill=tk.X, pady=10)
         
         from config import RAWPY_AVAILABLE, EXIFTOOL_AVAILABLE
-        
         ttk.Label(deps_frame, text=f"rawpy: {'Available' if RAWPY_AVAILABLE else 'Not available'}").pack(anchor=tk.W)
         ttk.Label(deps_frame, text=f"ExifTool: {'Available' if EXIFTOOL_AVAILABLE else 'Not available'}").pack(anchor=tk.W)
         ttk.Label(deps_frame, text=f"Docker: {'Available' if self.docker_manager.docker_available else 'Not available'}").pack(anchor=tk.W)
@@ -702,7 +718,10 @@ health_based: Selects instances based on a comprehensive health score (recommend
         credits_frame = ttk.LabelFrame(about_frame, text="Credits", padding="10")
         credits_frame.pack(fill=tk.X, pady=10)
         
-        ttk.Label(credits_frame, text="Developed by LightKeyia Team").pack(anchor=tk.W)
+        ttk.Label(credits_frame, text="Developed by Julien Lauzes").pack(anchor=tk.W)
+        website_label = ttk.Label(credits_frame, text="Website: https://lauzesjulien.com", foreground="blue", cursor="hand2")
+        website_label.pack(anchor=tk.W)
+        website_label.bind("<Button-1>", lambda e: webbrowser.open("https://lauzesjulien.com"))
         ttk.Label(credits_frame, text="Uses Ollama for AI image analysis").pack(anchor=tk.W)
     
     # Modifier la méthode update_processor pour prendre en compte le choix entre Ollama local et Docker
